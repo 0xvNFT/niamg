@@ -1,0 +1,942 @@
+var evodata = [
+    {
+        "name": "Egypt Gods",
+        "type": "4",
+        "img": "evo/v3/egyptgods_360x360.png"
+    },
+    {
+        "name": "Basketball",
+        "type": "10",
+        "img": "evo/v3/basketball_360x360.png"
+    },
+    {
+        "name": "Talismans of Fortune",
+        "type": "13",
+        "img": "evo/v3/talismansoffortune_360x360.png"
+    },
+    {
+        "name": "Robin Hood",
+        "type": "19",
+        "img": "evo/v3/robinhood_360x360.png"
+    },
+    {
+        "name": "Chinese New Year",
+        "type": "22",
+        "img": "evo/v3/chinesenewyear_360x360.png"
+    },
+    {
+        "name": "Clash of Pirates",
+        "type": "25",
+        "img": "evo/v3/clashofpirates_360x360.png"
+    },
+    {
+        "name": "Journey to the West",
+        "type": "28",
+        "img": "evo/v3/journeytothewest_360x360.png"
+    },
+    {
+        "name": "Jewellery Store",
+        "type": "37",
+        "img": "evo/v3/jewellerystore_360x360.png"
+    },
+    {
+        "name": "Indiana's Quest",
+        "type": "79",
+        "img": "evo/v3/indianasquest_360x360.png"
+    },
+    {
+        "name": "Elven Princesses",
+        "type": "82",
+        "img": "evo/v3/elvenprincesses_360x360.png"
+    },
+    {
+        "name": "Ace Round",
+        "type": "85",
+        "img": "evo/v3/aceround_360x360.png"
+    },
+    {
+        "name": "Fruit Burst",
+        "type": "88",
+        "img": "evo/v3/fruitburst_360x360.png"
+    },
+    {
+        "name": "Legend of Ra",
+        "type": "94",
+        "img": "evo/v3/legendofkaan_360x360.png"
+    },
+    {
+        "name": "The Emperor's Tomb",
+        "type": "95",
+        "img": "evo/v3/emperorstomb_360x360.png"
+    },
+    {
+        "name": "Atlantis",
+        "type": "98",
+        "img": "evo/v3/atlantis_360x360.png"
+    },
+    {
+        "name": "Epic Gladiators",
+        "type": "101",
+        "img": "evo/v3/epicgladiators_360x360.png"
+    },
+    {
+        "name": "Naughty Girls Cabaret",
+        "type": "104",
+        "img": "evo/v3/cabaret_360x360.png"
+    },
+    {
+        "name": "Football",
+        "type": "107",
+        "img": "evo/v3/footballscratch_360x360.png"
+    },
+    {
+        "name": "Camino de Chili Bonus Buy",
+        "type": "220",
+        "img": "evo/v3/caminodechili_360x360.png"
+    },
+    {
+        "name": "Mega Greatest Catch",
+        "type": "229",
+        "img": "evo/v3/megagreatestcatch_360x360.png"
+    },
+    {
+        "name": "Old West",
+        "type": "230",
+        "img": "evo/v3/oldwest_360x360.png"
+    },
+    {
+        "name": "Robinson",
+        "type": "293",
+        "img": "evo/v3/robinhood_360x360.png"
+    },
+    {
+        "name": "Candy Dreams",
+        "type": "296",
+        "img": "evo/v3/candydreams_360x360.png"
+    },
+    {
+        "name": "The Slavs",
+        "type": "719",
+        "img": "evo/v3/slavs_360x360.png"
+    },
+    {
+        "name": "Monster Lab",
+        "type": "730",
+        "img": "evo/v3/monsterlab_360x360.png"
+    },
+    {
+        "name": "The Great Conflict",
+        "type": "733",
+        "img": "evo/v3/greatwall_360x360.png"
+    },
+    {
+        "name": "Battle Tanks",
+        "type": "736",
+        "img": "evo/v3/battletanks_360x360.png"
+    },
+    {
+        "name": "Dolphins Treasure",
+        "type": "742",
+        "img": "evo/v3/dolphinstreasure_360x360.png"
+    },
+    {
+        "name": "BlackJack Lucky Sevens",
+        "type": "745",
+        "img": "evo/v3/blackjack_360x360.png"
+    },
+    {
+        "name": "Oasis Poker Classic",
+        "type": "748",
+        "img": "evo/v3/oasispokerclassic_360x360.png"
+    },
+    {
+        "name": "European Roulette",
+        "type": "946",
+        "img": "evo/v3/europeanroulette_360x360.png"
+    },
+    {
+        "name": "Roll The Dice",
+        "type": "949",
+        "img": "evo/v3/rolldice_360x360.png"
+    },
+    {
+        "name": "Thimbles",
+        "type": "952",
+        "img": "evo/v3/thimbles_360x360.png"
+    },
+    {
+        "name": "Four Aces",
+        "type": "958",
+        "img": "evo/v3/fouraces_360x360.png"
+    },
+    {
+        "name": "More or Less",
+        "type": "961",
+        "img": "evo/v3/moreorless_360x360.png"
+    },
+    {
+        "name": "Heads & Tails",
+        "type": "964",
+        "img": "evo/v3/headsortails_360x360.png"
+    },
+    {
+        "name": "Baccarat 777",
+        "type": "967",
+        "img": "evo/v3/baccarat_360x360.png"
+    },
+    {
+        "name": "Necromancer",
+        "type": "970",
+        "img": "evo/v3/necromancer_360x360.png"
+    },
+    {
+        "name": "Mystery Planet",
+        "type": "973",
+        "img": "evo/v3/mysteryplanet_360x360.png"
+    },
+    {
+        "name": "Charming Queens",
+        "type": "979",
+        "img": "evo/v3/charmingqueens_360x360.png"
+    },
+    {
+        "name": "Robots: Energy Conflict",
+        "type": "982",
+        "img": "evo/v3/robots_360x360.png"
+    },
+    {
+        "name": "Rock Paper Scissors",
+        "type": "985",
+        "img": "evo/v3/rockpaperscissors_360x360.png"
+    },
+    {
+        "name": "Lucky Girls",
+        "type": "988",
+        "img": "evo/v3/luckygirls_360x360.png"
+    },
+    {
+        "name": "E.T. Lost Socks",
+        "type": "994",
+        "img": "evo/v3/et_360x360.png"
+    },
+    {
+        "name": "American Roulette 3D Classic",
+        "type": "1009",
+        "img": "evo/v3/americanroulette_360x360.png"
+    },
+    {
+        "name": "E.T. Races",
+        "type": "1012",
+        "img": "evo/v3/etraces_360x360.png"
+    },
+    {
+        "name": "Reign of Dragons",
+        "type": "1018",
+        "img": "evo/v3/reignofdragons_360x360.png"
+    },
+    {
+        "name": "High Striker",
+        "type": "5344",
+        "img": "evo/v3/highstriker_360x360.png"
+    },
+    {
+        "name": "Nuke World",
+        "type": "5398",
+        "img": "evo/v3/nukeworld_360x360.png"
+    },
+    {
+        "name": "Dungeon: Immortal Evil",
+        "type": "5452",
+        "img": "evo/v3/dungeon_360x360.png"
+    },
+    {
+        "name": "Sprinkle",
+        "type": "5455",
+        "img": "evo/v3/sprinkle_360x360.png"
+    },
+    {
+        "name": "Brutal Santa",
+        "type": "5479",
+        "img": "evo/v3/brutalsanta_360x360.png"
+    },
+    {
+        "name": "Legend of Kaan",
+        "type": "5485",
+        "img": "evo/v3/legendofkaan_360x360.png"
+    },
+    {
+        "name": "Hungry Night",
+        "type": "5487",
+        "img": "evo/v3/hungrynight_360x360.png"
+    },
+    {
+        "name": "Courier Sweeper",
+        "type": "5489",
+        "img": "evo/v3/couriersweeper_360x360.png"
+    },
+    {
+        "name": "Scratch Match",
+        "type": "5491",
+        "img": "evo/v3/scratchmatch_360x360.png"
+    },
+    {
+        "name": "Book of Rest",
+        "type": "5493",
+        "img": "evo/v3/bookofrest_360x360.png"
+    },
+    {
+        "name": "Hot Triple Sevens",
+        "type": "5517",
+        "img": "evo/v3/hottriplesevens_360x360.png"
+    },
+    {
+        "name": "Magic Wheel",
+        "type": "5523",
+        "img": "evo/v3/magicwheel_360x360.png"
+    },
+    {
+        "name": "Bomb Squad",
+        "type": "5525",
+        "img": "evo/v3/bombsquad_360x360.png"
+    },
+    {
+        "name": "Season sisters",
+        "type": "5527",
+        "img": "evo/v3/seasonsisters_360x360.png"
+    },
+    {
+        "name": "Animal Quest",
+        "type": "5547",
+        "img": "evo/v3/animalquest_360x360.png"
+    },
+    {
+        "name": "Rich Reels",
+        "type": "5549",
+        "img": "evo/v3/richreels_360x360.png"
+    },
+    {
+        "name": "Irish Reels",
+        "type": "5551",
+        "img": "evo/v3/irishreels_360x360.png"
+    },
+    {
+        "name": "Texas Holdem Poker",
+        "type": "5553",
+        "img": "evo/v3/texasholdembonus_360x360.png"
+    },
+    {
+        "name": "Rise Of Horus",
+        "type": "5569",
+        "img": "evo/v3/riseofhorus_360x360.png"
+    },
+    {
+        "name": "Mine Field",
+        "type": "5573",
+        "img": "evo/v3/minefield_360x360.png"
+    },
+    {
+        "name": "Crown and Anchor",
+        "type": "5585",
+        "img": "evo/v3/crownandanchor_360x360.png"
+    },
+    {
+        "name": "Western Reels",
+        "type": "5587",
+        "img": "evo/v3/westernreels_360x360.png"
+    },
+    {
+        "name": "Rocket Stars",
+        "type": "5593",
+        "img": "evo/v3/rocketstars_360x360.png"
+    },
+    {
+        "name": "Fluffy Rangers",
+        "type": "5641",
+        "img": "evo/v3/fluffyrangers_360x360.png"
+    },
+    {
+        "name": "Penalty Shoot Out",
+        "type": "5643",
+        "img": "evo/v3/penaltyshootout_360x360.png"
+    },
+    {
+        "name": "Midnight Show",
+        "type": "5653",
+        "img": "evo/v3/midnightshow_360x360.png"
+    },
+    {
+        "name": "French Roulette Classic",
+        "type": "5669",
+        "img": "evo/v3/frenchrouletteclassic_360x360.png"
+    },
+    {
+        "name": "Sea of Spins",
+        "type": "5673",
+        "img": "evo/v3/seaofspins_360x360.png"
+    },
+    {
+        "name": "Surf Zone",
+        "type": "5677",
+        "img": "evo/v3/surfzone_360x360.png"
+    },
+    {
+        "name": "Texas Holdem Bonus",
+        "type": "5679",
+        "img": "evo/v3/texasholdembonus_360x360.png"
+    },
+    {
+        "name": "Football Manager",
+        "type": "5687",
+        "img": "evo/v3/football_360x360.png"
+    },
+    {
+        "name": "Jelly Boom",
+        "type": "5695",
+        "img": "evo/v3/jellyboom_360x360.png"
+    },
+    {
+        "name": "Raccoon Tales",
+        "type": "5717",
+        "img": "evo/v3/raccoontales_360x360.png"
+    },
+    {
+        "name": "Forest Dreams",
+        "type": "5721",
+        "img": "evo/v3/forestdreams_360x360.png"
+    },
+    {
+        "name": "Forgotten Fable",
+        "type": "5727",
+        "img": "evo/v3/forgottenfable_360x360.png"
+    },
+    {
+        "name": "Jolly Treasures",
+        "type": "5735",
+        "img": "evo/v3/jollytreasures_360x360.png"
+    },
+    {
+        "name": "Wheel Of Time",
+        "type": "5736",
+        "img": "evo/v3/wheeloftime_360x360.png"
+    },
+    {
+        "name": "Book Of Keno",
+        "type": "5739",
+        "img": "evo/v3/bookofkeno_360x360.png"
+    },
+    {
+        "name": "Ice Mania",
+        "type": "5740",
+        "img": "evo/v3/icemania_360x360.png"
+    },
+    {
+        "name": "Fruit Nova",
+        "type": "5741",
+        "img": "evo/v3/fruitnova_360x360.png"
+    },
+    {
+        "name": "Tree Of Light",
+        "type": "5742",
+        "img": "evo/v3/treeoflight_360x360.png"
+    },
+    {
+        "name": "Pachin Girl",
+        "type": "5743",
+        "img": "evo/v3/pachingirl_360x360.png"
+    },
+    {
+        "name": "Temple Of Dead",
+        "type": "5746",
+        "img": "evo/v3/templeofdead_360x360.png"
+    },
+    {
+        "name": "Christmas Party",
+        "type": "5748",
+        "img": "evo/v3/christmasparty_360x360.png"
+    },
+    {
+        "name": "Treasure Mania",
+        "type": "5749",
+        "img": "evo/v3/treasuremania_360x360.png"
+    },
+    {
+        "name": "Xmas Keno Cat",
+        "type": "5750",
+        "img": "evo/v3/xmaskenocat_360x360.png"
+    },
+    {
+        "name": "Wild Bullets",
+        "type": "5751",
+        "img": "evo/v3/wildbullets_360x360.png"
+    },
+    {
+        "name": "Fruit Super Nova",
+        "type": "5752",
+        "img": "evo/v3/fruitsupernova30_360x360.png"
+    },
+    {
+        "name": "Mehen",
+        "type": "5753",
+        "img": "evo/v3/mehen_360x360.png"
+    },
+    {
+        "name": "Runes Of Destiny",
+        "type": "5755",
+        "img": "evo/v3/runesofdestiny_360x360.png"
+    },
+    {
+        "name": "Neon Shapes",
+        "type": "5757",
+        "img": "evo/v3/neonshapes_360x360.png"
+    },
+    {
+        "name": "Ellen's Fortune",
+        "type": "5758",
+        "img": "evo/v3/ellensfortune_360x360.png"
+    },
+    {
+        "name": "Unlimited Wishes",
+        "type": "5759",
+        "img": "evo/v3/unlimitedwishes_360x360.png"
+    },
+    {
+        "name": "Food Feast",
+        "type": "5760",
+        "img": "evo/v3/foodfeast_360x360.png"
+    },
+    {
+        "name": "Mysteries of the East",
+        "type": "5761",
+        "img": "evo/v3/mysteriesoftheeast_360x360.png"
+    },
+    {
+        "name": "Epic Legends",
+        "type": "5762",
+        "img": "evo/v3/epiclegends_360x360.png"
+    },
+    {
+        "name": "Sweet Sugar",
+        "type": "5763",
+        "img": "evo/v3/sweetsugar_360x360.png"
+    },
+    {
+        "name": "Cycle of Luck",
+        "type": "5766",
+        "img": "evo/v3/cycleofluck_360x360.png"
+    },
+    {
+        "name": "Roll To Luck",
+        "type": "5767",
+        "img": "evo/v3/rolltoluck_360x360.png"
+    },
+    {
+        "name": "Gangster Night",
+        "type": "5771",
+        "img": "evo/v3/gangsternight_360x360.png"
+    },
+    {
+        "name": "Gold Of Sirens",
+        "type": "5773",
+        "img": "evo/v3/goldofsirens_360x360.png"
+    },
+    {
+        "name": "Bloody Brilliant",
+        "type": "5774",
+        "img": "evo/v3/bloodybrilliant_360x360.png"
+    },
+    {
+        "name": "Fruit Super Nova 40",
+        "type": "5775",
+        "img": "evo/v3/fruitsupernova40_360x360.png"
+    },
+    {
+        "name": "Bonanza Wheel",
+        "type": "5776",
+        "img": "evo/v3/bonanzawheel_360x360.png"
+    },
+    {
+        "name": "Temple Of Dead Bonus Buy",
+        "type": "5777",
+        "img": "evo/v3/templeofdeadbonusbuy_360x360.png"
+    },
+    {
+        "name": "Shadow Of Luxor",
+        "type": "5778",
+        "img": "evo/v3/shadowofluxor_360x360.png"
+    },
+    {
+        "name": "Save The Hamster",
+        "type": "5781",
+        "img": "evo/v3/savethehamster_360x360.png"
+    },
+    {
+        "name": "Cycle of Luck Bonus Buy",
+        "type": "5782",
+        "img": "evo/v3/cycleofluckbonusbuy_360x360.png"
+    },
+    {
+        "name": "Gold of Sirens Bonus Buy",
+        "type": "5787",
+        "img": "evo/v3/goldofsirensbonusbuy_360x360.png"
+    },
+    {
+        "name": "Anubis Moon",
+        "type": "5789",
+        "img": "evo/v3/anubismoon_360x360.png"
+    },
+    {
+        "name": "Fruit Disco",
+        "type": "5791",
+        "img": "evo/v3/fruitdisco_360x360.png"
+    },
+    {
+        "name": "Fruit Super Nova 30",
+        "type": "5793",
+        "img": "evo/v3/fruitsupernova30_360x360.png"
+    },
+    {
+        "name": "Fruit Super Nova 100",
+        "type": "5797",
+        "img": "evo/v3/fruitsupernova100_360x360.png"
+    },
+    {
+        "name": "Curse of the Pharaoh",
+        "type": "5799",
+        "img": "evo/v3/curseofthepharaoh_360x360.png"
+    },
+    {
+        "name": "Triple Chili",
+        "type": "5801",
+        "img": "evo/v3/triplechili_360x360.png"
+    },
+    {
+        "name": "Curse of the Pharaoh Bonus Buy",
+        "type": "5805",
+        "img": "evo/v3/curseofthepharaohbonusbuy_360x360.png"
+    },
+    {
+        "name": "Lucky Crumbling",
+        "type": "5811",
+        "img": "evo/v3/luckycrumbling_360x360.png"
+    },
+    {
+        "name": "Hot Triple Sevens Special",
+        "type": "5813",
+        "img": "evo/v3/hottriplesevensspecial_360x360.png"
+    },
+    {
+        "name": "Christmas Reach",
+        "type": "5815",
+        "img": "evo/v3/christmasreach_360x360.png"
+    },
+    {
+        "name": "Dragon's Tavern",
+        "type": "5829",
+        "img": "evo/v3/dragon_stavern_360x360.png"
+    },
+    {
+        "name": "Penalty Series",
+        "type": "5831",
+        "img": "evo/v3/penaltyseries_360x360.png"
+    },
+    {
+        "name": "Christmas Reach Bonus Buy",
+        "type": "5833",
+        "img": "evo/v3/christmasreachbonusbuy_360x360.png"
+    },
+    {
+        "name": "Wild Overlords",
+        "type": "5841",
+        "img": "evo/v3/wildoverlords_360x360.png"
+    },
+    {
+        "name": "Dragon's Tavern Bonus Buy",
+        "type": "5845",
+        "img": "evo/v3/dragon_stavernbonusbuy_360x360.png"
+    },
+    {
+        "name": "Budai Reels",
+        "type": "5847",
+        "img": "evo/v3/budaireels_360x360.png"
+    },
+    {
+        "name": "Andar Nights",
+        "type": "5849",
+        "img": "evo/v3/andarnights_360x360.png"
+    },
+    {
+        "name": "Budai Reels Bonus Buy",
+        "type": "5855",
+        "img": "evo/v3/budaireelsbonusbuy_360x360.png"
+    },
+    {
+        "name": "Wild Overlords Bonus Buy",
+        "type": "5857",
+        "img": "evo/v3/wildoverlordsbonusbuy_360x360.png"
+    },
+    {
+        "name": "Patrick's Magic Field",
+        "type": "5863",
+        "img": "evo/v3/patricksmagicfield_360x360.png"
+    },
+    {
+        "name": "Lucky Card",
+        "type": "5865",
+        "img": "evo/v3/luckycrumbling_360x360.png"
+    },
+    {
+        "name": "Blessed Flame",
+        "type": "5867",
+        "img": "evo/v3/blessedflame_360x360.png"
+    },
+    {
+        "name": "Temple of Thunder",
+        "type": "5868",
+        "img": "evo/v3/templeofthunder_360x360.png"
+    },
+    {
+        "name": "The Greatest Catch",
+        "type": "5871",
+        "img": "evo/v3/thegreatestcatch_360x360.png"
+    },
+    {
+        "name": "The Greatest Catch Bonus Buy",
+        "type": "5873",
+        "img": "evo/v3/thegreatestcatchbonusbuy_360x360.png"
+    },
+    {
+        "name": "Goblin Run",
+        "type": "5875",
+        "img": "evo/v3/goblinrun_360x360.png"
+    },
+    {
+        "name": "Juicy Gems",
+        "type": "5877",
+        "img": "evo/v3/juicygems_360x360.png"
+    },
+    {
+        "name": "Juicy Gems Bonus Buy",
+        "type": "5879",
+        "img": "evo/v3/juicygemsbb_360x360.png"
+    },
+    {
+        "name": "Tree Of Light Bonus Buy",
+        "type": "5887",
+        "img": "evo/v3/treeoflightbb_360x360.png"
+    },
+    {
+        "name": "Money Minter",
+        "type": "5889",
+        "img": "evo/v3/moneyminter_360x360.png"
+    },
+    {
+        "name": "Football Bet",
+        "type": "5891",
+        "img": "evo/v3/footballbet_360x360.png"
+    },
+    {
+        "name": "Candy Dreams: Sweet Planet",
+        "type": "5893",
+        "img": "evo/v3/candydreamssweetplanet_360x360.png"
+    },
+    {
+        "name": "Camino de Chili",
+        "type": "5897",
+        "img": "evo/v3/caminodechili_360x360.png"
+    },
+    {
+        "name": "Magic Chests",
+        "type": "5899",
+        "img": "evo/v3/magicchests_360x360.png"
+    },
+    {
+        "name": "Wolf Hiding",
+        "type": "5901",
+        "img": "evo/v3/wolfhiding_360x360.png"
+    },
+    {
+        "name": "Hot Volcano",
+        "type": "5902",
+        "img": "evo/v3/hotvolcano_360x360.png"
+    },
+    {
+        "name": "Massive Luck",
+        "type": "5903",
+        "img": "evo/v3/massiveluck_360x360.png"
+    },
+    {
+        "name": "Massive Luck Bonus Buy",
+        "type": "5905",
+        "img": "evo/v3/massiveluckbb_360x360.png"
+    },
+    {
+        "name": "Hot Volcano Bonus Buy",
+        "type": "5909",
+        "img": "evo/v3/hotvolcanobb_360x360.png"
+    },
+    {
+        "name": "Money Minter Bonus Buy",
+        "type": "5911",
+        "img": "evo/v3/moneyminterbb_360x360.png"
+    },
+    {
+        "name": "Redrose Sanctuary",
+        "type": "5913",
+        "img": "evo/v3/redrosesanctuary_360x360.png"
+    },
+    {
+        "name": "Rueda De Chile",
+        "type": "5919",
+        "img": "evo/v3/ruedadechile_360x360.png"
+    },
+    {
+        "name": "Inner Fire",
+        "type": "5921",
+        "img": "evo/v3/innerfire_360x360.png"
+    },
+    {
+        "name": "Mega Greatest Catch Bonus Buy",
+        "type": "5922",
+        "img": "evo/v3/megagreatestcatchbb_360x360.png"
+    },
+    {
+        "name": "Inner Fire Bonus Buy",
+        "type": "5923",
+        "img": "evo/v3/innerfirebb_360x360.png"
+    },
+    {
+        "name": "Collapsed Castle",
+        "type": "5926",
+        "img": "evo/v3/collapsedcastle_360x360.png"
+    },
+    {
+        "name": "Football Scratch",
+        "type": "5928",
+        "img": "evo/v3/footballscratch_360x360.png"
+    },
+    {
+        "name": "Wolf Hiding Bonus Buy",
+        "type": "5930",
+        "img": "evo/v3/wolfhidingbb_360x360.png"
+    },
+    {
+        "name": "Perfect Fishing",
+        "type": "5931",
+        "img": "evo/v3/perfectfishing_360x360.png"
+    },
+    {
+        "name": "Rueda De Chile Bonus Buy",
+        "type": "5935",
+        "img": "evo/v3/ruedadechilebb_360x360.png"
+    },
+    {
+        "name": "Ethan Grand: Mayan Diaries",
+        "type": "5937",
+        "img": "evo/v3/ethangrandmayandiaries_360x360.png"
+    },
+    {
+        "name": "Redrose Sanctuary Bonus Buy",
+        "type": "5939",
+        "img": "evo/v3/redrosesanctuarybb_360x360.png"
+    },
+    {
+        "name": "Treasure-snipes: Christmas",
+        "type": "5941",
+        "img": "evo/v3/treasuresnipeschristmas_360x360.png"
+    },
+    {
+        "name": "Collapsed Castle Bonus Buy",
+        "type": "5943",
+        "img": "evo/v3/collapsedcastlebb_360x360.png"
+    },
+    {
+        "name": "Expanding Master",
+        "type": "5947",
+        "img": "evo/v3/expandingmaster_360x360.png"
+    },
+    {
+        "name": "Sold it",
+        "type": "5949",
+        "img": "evo/v3/soldit_360x360.png"
+    },
+    {
+        "name": "Hot Rio Nights",
+        "type": "5951",
+        "img": "evo/v3/hotrionights_360x360.png"
+    },
+    {
+        "name": "Treasure-snipes: Christmas Bonus Buy",
+        "type": "5957",
+        "img": "evo/v3/treasuresnipeschristmasbb_360x360.png"
+    },
+    {
+        "name": "Sold it Bonus Buy",
+        "type": "5959",
+        "img": "evo/v3/solditbb_360x360.png"
+    },
+    {
+        "name": "Funny Hunting",
+        "type": "5961",
+        "img": "evo/v3/funnyhunting_360x360.png"
+    },
+    {
+        "name": "Hot Rio Nights Bonus Buy",
+        "type": "5963",
+        "img": "evo/v3/hotrionightsbb_360x360.png"
+    },
+    {
+        "name": "Candy Dreams: Bingo",
+        "type": "5965",
+        "img": "evo/v3/candydreams_360x360.png"
+    },
+    {
+        "name": "Treasure-snipes",
+        "type": "5969",
+        "img": "evo/v3/treasuresnipes_360x360.png"
+    },
+    {
+        "name": "Super Bartender",
+        "type": "5971",
+        "img": "evo/v3/superbartender_360x360.png"
+    },
+    {
+        "name": "Treasure-snipes Bonus Buy",
+        "type": "5973",
+        "img": "evo/v3/treasuresnipesbb_360x360.png"
+    },
+    {
+        "name": "Wonder Farm",
+        "type": "5979",
+        "img": "evo/v3/wonderfarm_360x360.png"
+    },
+    {
+        "name": "Irish Weekend",
+        "type": "5981",
+        "img": "evo/v3/irishweekend_360x360.png"
+    },
+    {
+        "name": "Treasures Of The Gods",
+        "type": "5983",
+        "img": "evo/v3/treasuresofthegods_360x360.png"
+    },
+    {
+        "name": "Wonder Farm Bonus Buy",
+        "type": "5985",
+        "img": "evo/v3/wonderfarmbb_360x360.png"
+    },
+    {
+        "name": "Unlimited Treasures",
+        "type": "5987",
+        "img": "evo/v3/unlimitedtreasures_360x360.png"
+    },
+    {
+        "name": "Irish Weekend Bonus Buy",
+        "type": "5989",
+        "img": "evo/v3/irishweekendbb_360x360.png"
+    },
+    {
+        "name": "X-Demon",
+        "type": "5991",
+        "img": "evo/v3/xdemon_360x360.png"
+    }
+]

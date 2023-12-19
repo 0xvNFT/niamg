@@ -1,0 +1,1 @@
+ALTER TABLE sys_user_bank ALTER COLUMN bank_name type varchar(100);

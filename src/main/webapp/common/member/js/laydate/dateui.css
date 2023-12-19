@@ -1,0 +1,23 @@
+.date-input-icon1{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("date.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+}
+
+.date-input-icon2{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("date.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+}
+
+.date{
+    width:130px!important;
+}

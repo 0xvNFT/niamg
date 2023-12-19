@@ -1,0 +1,2 @@
+--  添加【刷子用户分析】  菜单
+INSERT INTO "public"."admin_menu" ("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (488, '刷子用户分析', 'admin.menu.riskCheat', '/userCheat/index.do', 12, 41, '', 'admin:userCheat', 3);

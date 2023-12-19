@@ -1,0 +1,12 @@
+.otherLang .ui-main {
+  width: calc(100% - 260px) !important;
+}
+.otherLang .side-left {
+  width: 260px !important;
+}
+.otherLang .securityCenter-page .edit-dialog .cont .item .name {
+  width: 372px !important;
+}
+.otherLang .moneyChangeHis-page .add-dialog .cont .item .title {
+  min-width: 200px !important;
+}

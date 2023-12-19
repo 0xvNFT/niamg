@@ -1,0 +1,43 @@
+.otherLang {
+
+  // 左边导航栏
+  .ui-main {
+    // width: calc(100% - 227px) !important;
+    width: calc(100% - 260px) !important;
+  }
+
+  .side-left {
+    // width: 227px !important;
+    width: 260px !important;
+  }
+
+  // 左边导航栏
+
+  // 安全中心
+  .securityCenter-page .edit-dialog .cont .item .name {
+    // width: 350px !important;
+    width: 372px !important;
+  }
+
+  // 安全中心
+
+  // 额度转换记录
+  .moneyChangeHis-page .add-dialog .cont .item .title {
+    min-width: 200px !important;
+  }
+
+  // 额度转换记录
+
+  // 建议反馈
+  .advice-page .el-card__body {
+    .item-btn .el-button {
+      // width: 190px !important;
+    }
+
+    .item-con {
+      // width: calc(100% - 380px) !important;
+    }
+  }
+
+  // 建议反馈
+}

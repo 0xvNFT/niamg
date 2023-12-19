@@ -1,0 +1,124 @@
+个人总览 /userCenter/index.do
+
+提现     /userCenter/index.do#/withdraw
+账户充值 /userCenter/index.do#/recharge
+
+体育注单 /userCenter/index.do#/orderSport
+电子注单 /userCenter/index.do#/orderEgame
+真人注单 /userCenter/index.do#/orderLive
+棋牌注单 /userCenter/index.do#/orderChess
+电竞注单 /userCenter/index.do#/orderEsport
+捕鱼注单 /userCenter/index.do#/orderFishing
+
+存取记录 /userCenter/index.do#/recordCharge
+账变报表 /userCenter/index.do#/recordChange
+个人报表 /userCenter/index.do#/recordUser
+团队报表 /userCenter/index.do#/recordTeam
+
+安全中心     /userCenter/index.do#/securityCenter
+额度转换     /userCenter/index.do#/moneyChange
+额度转换记录 /userCenter/index.do#/moneyChangeHis
+银行卡列表   /userCenter/index.do#/bankIndex
+积分兑换     /userCenter/index.do#/scoreExchange
+打码量记录   /userCenter/index.do#/orderBetHis
+
+团队总览 /userCenter/index.do#/viewTeam
+用户列表 /userCenter/index.do#/userList
+推广注册 /userCenter/index.do#/promotionUrl
+注册管理 /userCenter/index.do#/regManage
+推荐总览 /userCenter/index.do#/recommend
+我的推荐 /userCenter/index.do#/recommendAgent
+
+站内短信 /userCenter/index.do#/message
+网站公告 /userCenter/index.do#/notice
+用户反馈 /userCenter/index.do#/advice
+
+
+模版：
+导航当前菜单 curMenu 值有：
+INDEX;// 首页
+ACTIVE;// 优惠活动
+MOBILE;// 手机购彩
+LIVE;// 真人
+EGAME;// 电子
+SPORT;// 体育
+CHESS;// 棋牌
+ESPORT;// 电竞
+FISHING;// 捕鱼
+LOTTERY;// 彩票
+VIP;// VIP页面
+HELP;// 帮助中心
+REGISTER;// 注册
+INFORMATION;// 资讯
+
+模版文件存放在 ：  /member/站点编号/语种/
+首页 index.do  页面： index.ftl
+通用路径： /mh/文件名.do  直接读取 模版下的 文件名.ftl
+登录页面： login.do  页面：login.ftl
+登录验证码： loginVerifycode.do
+登录操作： login.do?username=账号&password=密码&verifyCode=验证码
+	返回json： {"success":true}
+注销： logout.do 返回json： {"success":true}
+注册页面： register.do  页面： register.ftl
+注册验证码： registerVerifycode.do
+注册页面表单内容： regConfigData.do
+帮助中心： help.do
+活动中心： activity.do
+手机页面： mobile.do
+公告列表： newNotices.do
+
+
+banner 信息：/banner.do?type=
+	type 值有：
+		1=首页轮播
+		5=手机轮播轮播
+	返回值：json数组
+		[{"title":"分为分","titleImg":"http://baidu.com/logo.png","titleUrl":"http://baidu.com"},{"title":"fewqfeq","titleImg":"http://bbb.com/3bbb.png","titleUrl":"http://ccc.2com"}]
+		title： banner 标题
+		titleImg 图片路径
+		titleUrl 图片链接
+
+
+部分游戏针对部分币种存在一定的汇率，转入和转出时，系统自动计算汇率赚到第三方， 获取余额和拉取投注记录时，会根据汇率显示当前平台的币种额度。
+比如：AG 越南盾汇率是1000， 那转入少于1000时，系统会提示“金额必须大于1，汇率1000”。
+	转入1w到AG 越南盾平台， AG游戏中看到的余额只有10， 系统获取余额时，还是会显示1w。
+	如果要转出，也要对应的转出1w。
+	比如下注AG 越南币游戏10 游戏币，打码量时9.8，派奖5.8 游戏币， 拉取注单时， 会根据越南盾计算下注、打码量和派奖金额，此时注单的金额时 下注10000， 打码量 9800，派奖 5800
+
+游戏对应的汇率如下： 没有罗列出来的游戏 汇率为1:1
+================== 越南盾：游戏币=================
+AG          1000 : 1
+泛亚电竞      1 : 0.03
+BG          1000 : 1
+DG          1000 : 1
+JDB         1000 : 1
+开元         1 : 0.0003
+乐游         1 : 0.0002
+PG          1000 : 1
+天成彩票      1000 : 1
+
+==================== 印尼盾：游戏币==============
+AG      1000 : 1
+BG      1000 : 1
+JDB     1000 : 1
+开元     1 : 0.0005
+乐游     1 : 0.0005
+PG       1000 : 1
+天成彩票  1000 : 1
+
+==================== 泰铢： 游戏币 ==============
+泛亚电竞： 1 : 0.2
+开元  1 : 0.2
+乐游 1 : 0.2
+
+=================== 印度卢比： 游戏币 ============
+开元  1 : 0.05
+乐游 1 : 0.05
+
+
+=================== 巴西雷亚尔：游戏币 ===========
+开元  1 ：1.3
+
+
+
+

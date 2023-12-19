@@ -1,0 +1,58 @@
+.ch-container {padding: 0 15px;}
+div.center, p.center, img.center {margin-left: auto !important;margin-right: auto !important;float: none !important;display: block;text-align: center;}
+.login-header {font-size: 30px;font-weight: 600;color: #fff;text-align: center;padding-top: 30px;height: 120px;}
+.green{color:#458746;}
+.red{color:#B94846;}.blue{color:#3986AC;}.yellow{color:#F99406;}
+.ch-container .input-group-addon:last-child{padding:1px 3px;}
+body{
+    background:#2C3E50;
+    padding:100px 0px 30px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+.admin-login-btn{
+    background: #2ECC71;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 7px;
+    width: 82%;
+    border-radius: 6px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 0px 0px 0px 0px;
+    border-bottom: 3px solid #2AB766;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.admin-login-btn:hover {
+    background:#CC6E91;
+    border-bottom: 3px solid #C14171;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+}
+.rib {
+    background: url(../images/clr-bar.png)no-repeat;
+    width: 402px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -1%;
+    left: 0%;
+}

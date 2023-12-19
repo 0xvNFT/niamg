@@ -1,0 +1,2 @@
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (257, '修改状态', 'admin.menu.update.status', '', 185, 4, '', 'admin:domain:status', 4);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (258, '修改备注', 'admin.menu.update.remark', '', 185, 5, '', 'admin:domain:remark', 4);

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121.587" height="132.392" viewBox="0 0 121.587 132.392">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="路径_1108" data-name="路径 1108" class="cls-1" d="M.886.89H120.7V131.51H.886ZM0,132.4H121.587V0H0Z" transform="translate(0 -0.004)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="1" x2="0.001" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdca71"/>
+      <stop offset="0.5" stop-color="#feeac6"/>
+      <stop offset="0.997" stop-color="#fdca71"/>
+      <stop offset="1" stop-color="#fdca71"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="路径_1109" data-name="路径 1109" class="cls-1" d="M153.333,165.187H42.51V43.913H153.333ZM46.387,161.31H149.456V47.79H46.387Z" transform="translate(-42.51 -43.913)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-0.049" y1="1.046" x2="-0.047" y2="1.046" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="vip_mid" transform="translate(0 0)">
+    <g id="组_329" data-name="组 329" transform="translate(0 0)">
+      <g id="组_328" data-name="组 328" class="cls-2" transform="translate(0 0)">
+        <rect id="矩形_246" data-name="矩形 246" class="cls-3" width="121.587" height="132.392" transform="translate(0 0)"/>
+      </g>
+    </g>
+    <g id="组_331" data-name="组 331" transform="translate(5.382 5.559)">
+      <g id="组_330" data-name="组 330" class="cls-4">
+        <rect id="矩形_247" data-name="矩形 247" class="cls-5" width="110.823" height="121.274" transform="translate(0 0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

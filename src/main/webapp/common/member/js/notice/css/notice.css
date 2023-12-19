@@ -1,0 +1,212 @@
+/*公告(dialog-notice) 忘记密码 (dialog-forgot)*/
+.ui-popup .ui-dialog-arrow-b {
+    top: -16px !important;
+}
+
+div.dialog-notice {
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid #175e84;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(136, 136, 136, 0.5);
+    overflow: hidden;
+}
+
+.dialog-notice .ui-dialog-title {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.dialog-notice .ui-dialog-close {
+    position: absolute;
+    opacity: 1;
+    font-weight: normal;
+    height: 64px;
+    top: 0;
+    font-size: 30px;
+    color: #fff;
+    background: url(../images/popup-close.png?87d18ef591) no-repeat center;
+}
+
+.dialog-custom .ui-dialog-close {
+    position: absolute;
+    opacity: 1;
+    font-weight: normal;
+    height: 50px;
+    top: 0;
+    font-size: 30px;
+}
+
+.dialog-notice .ui-dialog-content {
+    color: #fff;
+}
+
+.dialog-notice .ui-dialog-body {
+    padding: 0 !important;
+}
+
+.dialog-custom .ui-dialog-body {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 170px;
+}
+
+.dialog-custom .ui-dialog-button {
+    float: none;
+    text-align: center;
+}
+
+.offical-site .d-inner {
+    display: inline-block;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.offical-site .d-title {
+    padding: 10px 30px 10px 15px;
+    font-size: 15px;
+}
+
+.offical-site .d-close {
+    font-size: 32px;
+    right: 12px;
+    top: 12px;
+}
+
+.offical-site .d-buttons {
+    text-align: center;
+}
+
+.offical-site .d-footer {
+    padding-bottom: 10px;
+}
+
+.side_left {
+    float: left;
+    width: 224px;
+    height: 542px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+    border-right: 1px solid #e5e4e4;
+}
+
+.side_item {
+    padding-left: 15px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #e5e4e4;
+}
+
+.side_item a {
+    color: #4c4c4c;
+    display: block;
+    padding-left: 20px;
+    background: url(../images/circle_ico.png?96e379885e) no-repeat left center;
+}
+
+.side_item a.active {
+    border-right: 3px solid #d0a806;
+}
+
+.side_item a span {
+    font-size: 16px;
+    display: block;
+    height: 42px;
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice_main {
+    float: left;
+    width: 762px;
+    height: 542px;
+    overflow: auto;
+    background: #fff;
+}
+
+.notice_main .notice_title {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e4e4;
+}
+
+.notice_main .notice_title h1 {
+    font-size: 22px;
+    color: #f4354a;
+    font-weight: bold;
+}
+
+.notice_main .notice_text {
+    font-size: 16px;
+    color: #5c5c5c;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.notice_main .notice_text div {
+    line-height: 30px;
+    margin-top: 22px;
+    word-spacing: normal;
+    word-break: break-word;
+}
+
+.notice_item {
+    width: 100%;
+    text-align: center;
+}
+
+.notice_text .fright {
+    width: auto !important;
+    float: right;
+}
+
+.notice_item a {
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0 3px;
+    color: #555;
+}
+
+.dialog-forgot {
+    overflow: hidden;
+}
+
+.dialog-forgot table {
+    width: 350px;
+    margin: 0 auto;
+    *margin: 0;
+}
+
+.dialog-forgot input {
+    width: 180px;
+    height: 20px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.dialog-forgot img {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.dialog-forgot .mt10px {
+    font-size: 12px;
+}
+
+.dialog-forgot .ui-dialog-footer {
+    border-top: 1px solid #ded5d5;
+    padding: 20px;
+}
+
+/*-------公告end*/

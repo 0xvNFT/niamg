@@ -1,0 +1,1 @@
+ALTER TABLE mny_draw_record alter COLUMN record_os type varchar(200);

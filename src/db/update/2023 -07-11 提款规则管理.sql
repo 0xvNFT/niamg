@@ -1,0 +1,4 @@
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (450, '提款规则管理', 'admin.menu.drawRuleStrategy', '/drawRuleStrategy/index.do', 7, 4, '','admin:drawRuleStrategy', 3);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (451, '修改', 'admin.menu.modify', '', 4450, 3, '', 'admin:drawRuleStrategy:modify', 4);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (452, '删除', 'admin.menu.del', '', 450, 1, '', 'admin:drawRuleStrategy:delete', 4);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (453, '新增', 'admin.menu.add', '', 450, 2, '', 'admin:drawRuleStrategy:add', 4);

@@ -1,0 +1,37 @@
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+.Max-bg {width: 100%;height: 969px;background: url("../images/chess/BG.png");background-position: 50% 50%;overflow: hidden;}
+.Max-bg .pop {width: 100%;height: 100%;background: url("../images/chess/pop.png") bottom no-repeat;position: absolute;bottom: 0;}
+.Max-bg .title {width: 415px;height: 14.7%;margin: 40px auto 0;}
+.Max-bg .pop .center {width: 1310px;height: 780px;background: url("../images/chess/center.png");margin: 144px auto 0;position: relative;background-size: 100% 100%;}
+.Max-bg .pop .center .hover-list {width: 267px;height: 617px;position: absolute;left: 103px;bottom: 70px;overflow-x: hidden;}
+.Max-bg .pop .center .hover-list li {width: 190px;height: 79.2px;margin: 23px 0 0 38px;}
+.Max-bg .pop .center .hover-list li a {font-size: 25px;color: #60523e;width: 170px;height: 79.2px;display: block;background: url(../images/chess/active.png) no-repeat;line-height: 79.2px;padding-left: 20px;font-family: Source Han Sans CN;font-weight: 500;background-size: 100% 100%;}
+.Max-bg .pop .center .hover-list li.hover {width: 243.9px;height: 90px;margin: 23px 0 0 12px;}
+.Max-bg .pop .center .hover-list li.hover a {font-family: Source Han Sans CN;color: #fff;font-size: 30px;width: 210px;height: 90px;background: url(../images/chess/active-hover.png) no-repeat;padding-left: 25px;-webkit-text-stroke: 2px #b0542a;font-weight: 900;line-height: 84px;background-size: 100% 100%;}
+.Max-bg .pop .center .XQ-list-Max {width: 770px;height: 606px;position: absolute;right: 149px;bottom: 82px;overflow-x: hidden;}
+.Max-bg .pop .center .XQ-list-Max ul>li {width: 140px;height: 144px;float: left;margin: 22px 25.5px 35px 25.5px;}
+.Max-bg .pop .center .XQ-list-Max a {font-size: 18px;color: #815f39;font-family: Source Han Sans CN;font-weight: bold;}
+.Max-bg .pop .center .XQ-list-Max a:hover {color: #df6834}
+.Max-bg .pop .center .XQ-list-Max ul>li img {width: 140px;}
+.Max-bg .pop .center .XQ-list-Max ul.YG-width li img {width: 90%;}
+.Max-bg .pop .center .XQ-list-Max ul>li span {width: 100%;display: block;text-align: center;}
+/*css主要部分的样式*/
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {width: 4px; /*对垂直流动条有效*/height: 10px; /*对水平流动条有效*/}
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);background-color: #452b08;border-radius: 3px;}
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb {width: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);background-color: #c2ac31;}
+/*定义右下角汇合处的样式*/
+::-webkit-scrollbar-corner {background: khaki;}
+.red-bag-float {position: absolute;width: 250px;z-index: 999999;right: 0px;top: 50%;}
+.XQ-list-Max .fd {display: none;}
+.XQ-list-Max .shownow {display: block;}
+.XQ-list-Max .hidenow {display: none;}
+.pop-login{display:none;z-index: 1000;padding:10px 0px 0px 100px;}
+.pop-login .sub{height: 40px;width: 165px;line-height: 40px;text-align: center;color: #fff;background-color: #34495e;font-size: 18px;border: 0;border-radius: 3px;*margin-left: -63px;outline: none;display:block;padding: 10px 20px;}
+.pop-login .sub:hover {background-color: #57667b;}
+.pop-login .sub:active {background-color: #2e4154;}
+.init-highlight {background-color: #009999;}

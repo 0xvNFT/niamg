@@ -1,0 +1,62 @@
+// 大于1600px
+@media only screen and (min-width: 1600px) {
+  .col-8--2{
+    width: calc(100% / 8) !important;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1300px) {
+  .col-8--2{
+    width: calc(100% / 7) !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1100px) {
+  .col-8--2{
+    width: calc(100% / 6) !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .col-8--2{
+    width: calc(100% / 5) !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
+  .active_list_item{
+    width: calc((100% - 36px) / 3) !important;
+  }
+}
+
+// 小于1024
+@media only screen and (max-width: 1000px) {
+  .active_list_item{
+    width: calc(50% - 12px) !important;
+  }
+  .footer-line{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 650px) {
+  .col-8--2{
+    width: calc(100% / 4) !important;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 450px) {
+  .col-8--2{
+    width: calc(100% / 3) !important;
+  }
+}
+
+// 小于450
+@media only screen and (max-width: 450px) {
+  .col-8--2{
+    width: calc(100% / 2) !important;
+  }
+  .active_list_item{
+    width: calc(100% - 12px) !important;
+  }
+}

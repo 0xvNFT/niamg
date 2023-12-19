@@ -1,0 +1,1 @@
+[1,0,0,[["cc.TextAsset",["_name","text"],1]],[[0,0,1,3]],[[0,"map","编号,类型(1普通2奖励3Boss),对应地图表格\r\nnumber,number,string\r\nID,type,mapName\r\n1,1,map001\r\n2,1,map002\r\n3,1,map003\r\n4,2,map004"]],0,0,[],[],[]]

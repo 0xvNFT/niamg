@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+a{ color:#333; text-decoration:none;outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+html{ font-size:12px;font-family:"微软雅黑"; color:#000;}
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0; font-size:14px;}
+ul, li, dl, dd, dt, p {margin:0px; padding:0px;}
+ul ,li {list-style-type:none;}
+em, i{font-style:normal;}
+img{border:none;}
+.clear{ height:0; overflow:hidden; clear:both; width:100%;}
+body{font-size:12px; font-family:"微软雅黑"; background:#fff;}
+.dis{display:none;}
+.img_mg{float:right !important; margin-right:0 !important;}
+.no_bod{border-bottom:none !important;}
+.ma_le{ margin-left:0 !important;}
+/*全局样式*/
+.header{ width:100%; float:left; background:#fff; height:113px; border-bottom:1px solid #e5e5e5;}
+.a_auto{ width:1000px; margin:0 auto;}
+.head{ width:100%; float:left; -webkit-animation:fadeInUp 0.8s ease 0.8s both; -moz-animation:fadeInUp 0.8s ease 0.8s both;}
+.head_1{ float:left; margin:0 0 0 0;}
+.head_2{ float:left; margin:13px 0 0 207px;}
+.head_3{ float:right; margin:35px 5px 0 0; }
+.head_3 img:hover{ border-radius:20px; transition:all 0.4s;}
+.bar{ width:100%; float:left; position:relative;}
+.bar_2{ width:100%; position:absolute; left:0; top:0;}
+.bar_1{ width:100%; float:left;}
+.bar_1 img{ width:100%;}
+.bar_n{ width:100%; float:left; position:relative;}
+.li_1 i{ position:absolute; left:0; top:0;}
+.li_1 b{ position:absolute; left:0; top:0; display:none;}
+.li_2 i{ position:absolute; left:0; top:0;}
+.li_2 b{ position:absolute; left:0; top:0; display:none;}
+.li_3 i{ position:absolute; left:0; top:0;}
+.li_3 b{ position:absolute; left:0; top:0; display:none;}
+.li_4 i{ position:absolute; left:0; top:0;}
+.li_4 b{ position:absolute; left:0; top:0; display:none;}
+.li_5 i{ position:absolute; left:0; top:0;}
+.li_5 b{ position:absolute; left:0; top:0; display:none;}
+.li_6 i{ position:absolute; left:0; top:0;}
+.li_6 b{ position:absolute; left:0; top:0; display:none;}
+
+.li_1:hover b{ display:block;}
+.li_2:hover b{ display:block;}
+.li_3:hover b{ display:block;}
+.li_4:hover b{ display:block;}
+.li_5:hover b{ display:block;}
+.li_6:hover b{ display:block;}
+
+
+
+
+.li_1{ position:absolute; top:36px; left:50%; margin-left:-67px; width:135px; transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+.li_2{ position:absolute; top:133px; right:226px; width:135px; transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+.li_3{ position:absolute; top:370px; right:235px; width:135px; transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+.li_4{ position:absolute; top:490px; left:50%; margin-left:-67px; width:135px;  transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+.li_5{ position:absolute; top:370px; left:225px; width:135px; transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+.li_6{ position:absolute; top:133px; left:213px; width:135px; transition:width 1s, height 1s;
+            -moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+            -webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+            -o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */}
+
+.li_1:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+.li_2:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+.li_3:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+.li_4:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+.li_5:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+.li_6:hover{ transform:rotateY(360deg);
+            -moz-transform:rotateY(360deg); /* Firefox 4 */
+            -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+            -o-transform:rotateY(360deg); /* Opera */}
+			
+.bar_n li:hover span{ color:#f6de10;}
+.bar_n li:hover p{ color:#f6de10;}
+.bar_n li:hover .pus{ color:#f6de10;}
+.bar_n li div{ width:100%; float:left; position:relative;}
+.bar_n li a{ width:100%; float:left; height:100%;}
+.am_1 h3{ position:absolute; left:57px; top:-17px; width:22px;}
+.am_2 h3{ position:absolute; left:57px; top:-17px; width:24px;}
+.am_3 h3{ position:absolute; left:55px; top:-17px; width:23px;}
+.am_4 h3{ position:absolute; left:57px; top:-17px; width:25px;}
+.am_5 h3{ position:absolute; left:55px; top:-17px; width:24px;}
+.am_6 h3{ position:absolute; left:57px; top:-17px; width:23px;}
+
+.am_1 h3 img{ width:100%;}
+.am_2 h3 img{ width:100%;}
+.am_3 h3 img{ width:100%;}
+.am_4 h3 img{ width:100%;}
+.am_5 h3 img{ width:100%;}
+.am_6 h3 img{ width:100%;}
+
+.am_1 h4 img{ width:100%;}
+.am_2 h4 img{ width:100%;}
+.am_3 h4 img{ width:100%;}
+.am_4 h4 img{ width:100%;}
+.am_5 h4 img{ width:100%;}
+.am_6 h4 img{ width:100%;}
+
+.bar_n li:hover h4{ display:block;}
+
+.am_1 h4{ position:absolute; left:57px; top:-17px; width:22px; display:none;}
+.am_2 h4{ position:absolute; left:57px; top:-17px; width:24px; display:none;}
+.am_3 h4{ position:absolute; left:55px; top:-17px; width:23px; display:none;}
+.am_4 h4{ position:absolute; left:57px; top:-17px; width:25px; display:none;}
+.am_5 h4{ position:absolute; left:55px; top:-17px; width:24px; display:none;}
+.am_6 h4{ position:absolute; left:57px; top:-17px; width:23px; display:none;}
+
+.bar_n li div p{ width:175px; margin-left:-20px; text-align:center; position:absolute; left:0; top:53px; font-weight:bold; color:#fff; font-size:16px;}
+.bar_n li div span{ width:100%; position:absolute; left:0; top:143px; text-align:center; font-size:18px; color:#fff; font-weight:bold;}
+.pus{ width:100%; height:24px; position:absolute;top:85px; left:0; text-align:center; font-size:14px; background:none; border:0; color:#fff; border:0;line-height:24px;}
+.bar_n li div em{ width:100%; height:24px; position:absolute;top:85px; left:0;}
+
+.list{ width:100%; float:left; background:#fff; padding:30px 0 0 0;}
+.list_y{ width:100%; float:left; text-align:center;}
+.list_y img{ padding:0 9px;}
+.foot{ width:100%; float:left; text-align:center; padding-bottom:25px;}
+.foot h3{ font-size:14px; color:#000; font-weight:normal; padding:10px 0;}
+.foot p{ font-size:14px; color:#9f9f9f;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

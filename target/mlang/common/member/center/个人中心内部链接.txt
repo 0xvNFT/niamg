@@ -1,0 +1,55 @@
+个人总览 /userCenter/index.do
+
+提现     /userCenter/index.do#/withdraw
+账户充值 /userCenter/index.do#/recharge
+
+体育注单 /userCenter/index.do#/orderSport
+电子注单 /userCenter/index.do#/orderEgame
+真人注单 /userCenter/index.do#/orderLive
+棋牌注单 /userCenter/index.do#/orderChess
+电竞注单 /userCenter/index.do#/orderEsport
+捕鱼注单 /userCenter/index.do#/orderFishing
+
+存取记录 /userCenter/index.do#/recordCharge
+账变报表 /userCenter/index.do#/recordChange
+个人报表 /userCenter/index.do#/recordUser
+团队报表 /userCenter/index.do#/recordTeam
+
+安全中心     /userCenter/index.do#/securityCenter
+额度转换     /userCenter/index.do#/moneyChange
+额度转换记录 /userCenter/index.do#/moneyChangeHis
+银行卡列表   /userCenter/index.do#/bankIndex
+USDT列表   /userCenter/index.do#/usdtIndex
+积分兑换     /userCenter/index.do#/scoreExchange
+打码量记录   /userCenter/index.do#/orderBetHis
+
+团队总览 /userCenter/index.do#/viewTeam
+用户列表 /userCenter/index.do#/userList
+推广注册 /userCenter/index.do#/promotionUrl
+注册管理 /userCenter/index.do#/regManage
+推荐总览 /userCenter/index.do#/recommend
+我的推荐 /userCenter/index.do#/recommendAgent
+我的分享 /userCenter/index.do#/myRecommend
+
+站内短信 /userCenter/index.do#/message
+网站公告 /userCenter/index.do#/notice
+用户反馈 /userCenter/index.do#/advice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

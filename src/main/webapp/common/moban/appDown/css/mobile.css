@@ -1,0 +1,306 @@
+body {
+	font-family: "Microsoft YaHei",tahoma,verdana,arial,sans-serif;
+	background: #ffffff url(../images/bj.png) center bottom no-repeat;
+	background-size: contain;
+	font-size: 15px;
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+ul,li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+i {
+	font-style: normal;
+}
+
+.mui-bar-nav {
+	background-color: #e71516;
+	height: 55px;
+}
+
+.mui-bar .mui-title {
+	color: #ffffff;
+	font-size: 15px;
+	text-align: right;
+	background-size: contain;
+	left: 8px;
+	right: 8px;
+	top: 5px;
+}
+
+.mui-bar .mui-btn-link {
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 55px;
+}
+
+.mui-content {
+	background: none;
+}
+
+.topcon {
+	padding-top: 0.3rem;
+	width: 95%;
+	margin: 0px auto;
+	padding-bottom: 0.1rem;
+}
+
+.slidercon {
+	width: 85%;
+	height: 3.1rem;
+	background: url(../images/phone.png) center top no-repeat;
+	background-size: contain;
+	float: right;
+	padding: 0.31rem 0.11rem;
+	padding-left: 0.1rem;
+}
+
+@font-face {
+	font-family: "iconfont";
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+}
+
+h3,h4 {
+	text-align: center;
+}
+
+h3 {
+	margin-top: 20px;
+	font-size: 0.20rem;
+}
+
+h4 {
+	font-weight: normal;
+	padding: 0.02rem 0px;
+	font-size: 0.12rem;
+}
+
+.erweima {
+	width: 60%;
+	margin: 0px auto;
+	padding: 0.03rem;
+	background: url(../images/QR_line.png) center center no-repeat;
+	background-size: contain;
+}
+
+.erweima img {
+	width: 100%;
+}
+
+.downlink {
+	padding-bottom: 20px;
+}
+
+.downlink a {
+	width: 90%;
+	display: block;
+	margin: 0px auto;
+	height: 0.35rem;
+	margin-top: 0.05rem;
+	line-height: 0.35rem;
+	text-align: center;
+	font-size: 0.13rem;
+}
+
+.downlink a i {
+	font-style: normal;
+	font-size: 0.17rem;
+}
+
+a.ios {
+	background: url(../images/android_down_btn.png) center center no-repeat;
+	background-size: contain;
+	color: #ffffff;
+}
+
+a.android {
+	background: url(../images/ios_down_btn.png) center center no-repeat;
+	background-size: contain;
+	color: #ffffff;
+}
+
+.xianlutit {
+	font-size: 0.18rem;
+	color: #000000;
+	text-align: center;
+}
+
+.xianludot {
+	background: #ecbb51;
+	width: 0.23rem;
+	height: 0.05rem;
+	margin: 0.08rem auto;
+	border-radius: 0.025rem;
+}
+
+.xianlulist ul li {
+	list-style: none;
+	border-radius: 19px;
+	margin: 8px 0px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.xianlulist ul li a {
+	padding: 0.08rem 0px;
+	font-size: 0.13rem;
+	line-height: 0.2rem;
+	color: #373737;
+	overflow: hidden;
+}
+
+.xianlulist ul li a.czzx {
+	color: #e9280d;
+}
+
+.xianlulist ul li a {
+	background: #ffffff;
+	width: 90%;
+	display: inline-block;
+	border: 1px solid #dddddd;
+	border-radius: 0.16rem;
+	;
+}
+
+.xianlulist ul li a i {
+	display: inline-block;
+	height: 0.2rem;
+	width: 0.2rem;
+}
+
+.xianlulist ul li a i.dlxianlu {
+	background: url(../images/cn.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.xianlulist ul li a i.twxianlu {
+	background: url(../images/mc.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.xianlulist ul li a i.amxianlu {
+	background: url(../images/tw.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.xianlulist ul li a i.hwxianlu {
+	background: url(../images/other.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.xianlulist ul li a i.hkxianlu {
+	background: url(../images/hk.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.xianlulist ul li a i.czcenter {
+	background: url(../images/charge.png) left center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-left: 8px;
+}
+
+.footer {
+	margin-top: 0.25rem;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	background: #e71516;
+}
+
+.footer p {
+	text-align: center;
+	font-size: 0.12rem;
+	color: #ffffff;
+	margin-bottom: 0px;
+}
+
+.footer p span {
+	display: inline-block;
+	width: 0.18rem;
+	height: 0.18rem;
+	background-size: contain;
+	margin-right: 0.03rem;
+	margin-bottom: -0.03rem;
+}
+
+.gamedes {
+	background: url(../images/coin_bj.png) right top no-repeat;
+	background-size: 20%;
+	margin: 0.2rem auto;
+	margin-top: 0.28rem;
+}
+
+.descon {
+	padding-left: 0.06rem;
+}
+
+.descon h5 {
+	color: #000000;
+}
+
+.descon h5 img {
+	width: 0.06rem;
+	margin: 0px 0.03rem;
+}
+
+.descon p {
+	color: #000000;
+	padding: 0.01rem 0px;
+	margin: 0px;
+}
+
+.erweima2 img {
+	max-width: 80%;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	padding: 0.02rem;
+}
+
+.erweima2 {
+	text-align: right;
+}
+
+a.qqicon {
+	height: 0.18rem;
+	line-height: 0.18rem;
+	display: inline-block;
+	background: url(../images/qq_ico.png) left center no-repeat;
+	background-size: contain;
+	padding-left: 30px;
+	margin-right: 0.05rem;
+	color: #000000;
+}
+
+span.telicon {
+	height: 0.18rem;
+	line-height: 0.18rem;
+	display: inline-block;
+	background: url(../images/phone_ico.png) left center no-repeat;
+	background-size: contain;
+	padding-left: 30px;
+	margin-left: 0.05rem;
+}

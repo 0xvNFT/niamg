@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  word-break: break-word !important;
+}
+
+/* 修正IE5.x和IE6的斜体溢出bug */
+* html body {
+  overflow: visible;
+}
+
+* html iframe,
+* html frame {
+  overflow: auto;
+}
+
+* html frameset {
+  overflow: hidden;
+}
+
+body {
+  color: #fff;
+  background: #FFF;
+  // font-size: 12px;
+  font-size: 14px;
+  line-height: 1.3;
+  min-width: 1080px;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2a3546;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1a242d;
+}
+
+input,
+select {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,
+input {
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a img,
+iframe {
+  border: none;
+}
+
+/* 去掉链接的虚线框 */
+a {
+  outline: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* 定义H系列标签，覆盖H系列标签默认属性 */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.evenly-list {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.blueText {
+  color: $blueTxt;
+}
+
+.searchDiv {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    // margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+
+    .el-checkbox {
+      margin-top: 5px;
+    }
+  }
+
+  .el-select {
+    .el-input {
+      width: 182px;
+    }
+  }
+
+  .el-input {
+    width: 150px;
+  }
+}
+
+.statistics {
+  width: 99%;
+
+  .line {
+    color: #090414b8;
+    background: #f5f7fa;
+    border-bottom: 1px solid #ebeef5;
+    padding: 12px 10px;
+    font-weight: bold;
+
+    div {
+      display: inline-block;
+    }
+  }
+}
+
+.order-page {
+  .lookInfo {
+    color: $blueTxt;
+    cursor: pointer;
+  }
+
+  .info-dialog {
+    .cont {
+      max-height: 350px;
+      overflow-y: auto;
+    }
+  }
+
+  .text-primary {
+    color: #337ab7;
+  }
+}
+
+// el start
+.el-menu {
+  border-right: none !important;
+}
+
+.el-table td,
+.el-table th {
+  text-align: center !important;
+}
+
+.el-table th {
+  background-color: #F5F7FA !important;
+}
+.el-tabs {
+  color: #909399;
+}
+
+.el-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+// .el-button--success {
+//   background-color: $greenBtn !important;
+// }
+
+// el end
+
+@media (max-width:1080px) {
+
+  body {
+    overflow-x: auto;
+  }
+}

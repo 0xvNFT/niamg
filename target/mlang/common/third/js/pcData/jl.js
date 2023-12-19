@@ -1,0 +1,324 @@
+var jldata = [
+    {
+        "name": "Chin Shi Huang",
+        "type": "2",
+        "img": "jl/v3/ChinShiHuang.png"
+    },
+    {
+        "name": "God Of Martial",
+        "type": "4",
+        "img": "jl/v3/GAMEID_4_EN.png"
+    },
+    {
+        "name": "Hot Chilli",
+        "type": "5",
+        "img": "jl/v3/hotchilli.png"
+    },
+    {
+        "name": "fortune tree",
+        "type": "6",
+        "img": "jl/v3/GAMEID_6_EN.png"
+    },
+    {
+        "name": "war of dragons",
+        "type": "9",
+        "img": "jl/v3/GAMEID_9_EN.png"
+    },
+    {
+        "name": "GemParty",
+        "type": "10",
+        "img": "jl/v3/GAMEID_10_EN.png"
+    },
+    {
+        "name": "Lucky Ball",
+        "type": "13",
+        "img": "jl/v3/GAMEID_13_EN.png"
+    },
+    {
+        "name": "StarBurst",
+        "type": "14",
+        "img": "jl/v3/GAMEID_14_EN.png"
+    },
+    {
+        "name": "Jungle King",
+        "type": "16",
+        "img": "jl/v3/GAMEID_16_EN.png"
+    },
+    {
+        "name": "Shanghai Beauty",
+        "type": "17",
+        "img": "jl/v3/GAMEID_17_EN.png"
+    },
+    {
+        "name": "Hawaii Beauty",
+        "type": "26",
+        "img": "jl/v3/GAMEID_26_EN.png"
+    },
+    {
+        "name": "SevenSevenSeven",
+        "type": "27",
+        "img": "jl/v3/GAMEID_27_EN.png"
+    },
+    {
+        "name": "Bubble Beauty",
+        "type": "30",
+        "img": "jl/v3/GAMEID_30_EN.png"
+    },
+    {
+        "name": "FortunePig",
+        "type": "33",
+        "img": "jl/v3/GAMEID_33_EN.png"
+    },
+    {
+        "name": "Crazy777",
+        "type": "35",
+        "img": "jl/v3/GAMEID_35_EN.png"
+    },
+    {
+        "name": "BaoBoonChin",
+        "type": "36",
+        "img": "jl/v3/GAMEID_36_EN.png"
+    },
+    {
+        "name": "Fengshen",
+        "type": "38",
+        "img": "jl/v3/GAMEID_38_EN.png"
+    },
+    {
+        "name": "CrazyFaFaFa",
+        "type": "40",
+        "img": "jl/v3/GAMEID_40_B_EN.png"
+    },
+    {
+        "name": "Xiyangyang",
+        "type": "43",
+        "img": "jl/v3/GAMEID_43_EN.png"
+    },
+    {
+        "name": "DiamondParty",
+        "type": "44",
+        "img": "jl/v3/GAMEID_44_EN.png"
+    },
+    {
+        "name": "CrazyGoldenBank",
+        "type": "45",
+        "img": "jl/v3/GAMEID_45_EN.png"
+    },
+    {
+        "name": "Charge Buffalo",
+        "type": "47",
+        "img": "jl/v3/GAMEID_47_EN.png"
+    },
+    {
+        "name": "Lucky Goldbricks",
+        "type": "48",
+        "img": "jl/v3/GAMEID_48_EN.png"
+    },
+    {
+        "name": "SuperAce",
+        "type": "49",
+        "img": "jl/v3/GAMEID_49_EN.png"
+    },
+    {
+        "name": "MoneyComing",
+        "type": "51",
+        "img": "jl/v3/GAMEID_51_EN.png"
+    },
+    {
+        "name": "GoldenQueen",
+        "type": "58",
+        "img": "jl/v3/GAMEID_58_EN.png"
+    },
+    {
+        "name": "DragonTiger",
+        "type": "61",
+        "img": "jl/v3/GAMEID_61_EN.png"
+    },
+    {
+        "name": "Dice",
+        "type": "62",
+        "img": "jl/v3/GAMEID_62_EN.png"
+    },
+    {
+        "name": "SevenUpDown",
+        "type": "63",
+        "img": "jl/v3/GAMEID_63_EN.png"
+    },
+    {
+        "name": "BlockLobby",
+        "type": "64",
+        "img": "jl/v3/GAMEID_64_EN.png"
+    },
+    {
+        "name": "Roll",
+        "type": "66",
+        "img": "jl/v3/GAMEID_66_EN.png"
+    },
+    {
+        "name": "NightClub",
+        "type": "76",
+        "img": "jl/v3/GAMEID_76_EN.png"
+    },
+    {
+        "name": "BoxingKing",
+        "type": "77",
+        "img": "jl/v3/GAMEID_77_EN.png"
+    },
+    {
+        "name": "Secret Treasure",
+        "type": "78",
+        "img": "jl/v3/GAMEID_78_EN.png"
+    },
+    {
+        "name": "PharaohTreasure",
+        "type": "85",
+        "img": "jl/v3/GAMEID_85_EN.png"
+    },
+    {
+        "name": "Book of Gold",
+        "type": "87",
+        "img": "jl/v3/GAMEID_87_EN.png"
+    },
+    {
+        "name": "Lucky Lady",
+        "type": "89",
+        "img": "jl/v3/GAMEID_89_EN.png"
+    },
+    {
+        "name": "LuckyComing",
+        "type": "91",
+        "img": "jl/v3/GAMEID_91_EN.png"
+    },
+    {
+        "name": "CrazyHunter",
+        "type": "92",
+        "img": "jl/v3/GAMEID_92_EN.png"
+    },
+    {
+        "name": "SuperRich",
+        "type": "100",
+        "img": "jl/v3/GAMEID_100_EN.png"
+    },
+    {
+        "name": "Medusa",
+        "type": "101",
+        "img": "jl/v3/GAMEID_101_EN.png"
+    },
+    {
+        "name": "Roma X",
+        "type": "102",
+        "img": "jl/v3/GAMEID_102_EN.png"
+    },
+    {
+        "name": "Golden Empire",
+        "type": "103",
+        "img": "jl/v3/GAMEID_103_EN.png"
+    },
+    {
+        "name": "TwinWins",
+        "type": "106",
+        "img": "jl/v3/GAMEID_106_EN.png"
+    },
+    {
+        "name": "Magic Lamp",
+        "type": "108",
+        "img": "jl/v3/GAMEID_108_en.png"
+    },
+    {
+        "name": "FortuneGems",
+        "type": "109",
+        "img": "jl/v3/GAMEID_109_EN.png"
+    },
+    {
+        "name": "Ali Baba",
+        "type": "110",
+        "img": "jl/v3/GAMEID_110_EN.png"
+    },
+    {
+        "name": "Agent Ace",
+        "type": "115",
+        "img": "jl/v3/GAMEID_115_EN.png"
+    },
+    {
+        "name": "Happy Taxi",
+        "type": "116",
+        "img": "jl/v3/GAMEID_116_EN.png"
+    },
+    {
+        "name": "Bones Fortune",
+        "type": "126",
+        "img": "jl/v3/146x136_EN_GAMEID_126.png"
+    },
+    {
+        "name": "ThorX",
+        "type": "130",
+        "img": "jl/v3/GAMEID_130_EN.png"
+    },
+    {
+        "name": "Mega Ace",
+        "type": "134",
+        "img": "jl/v3/GAMEID_134_EN_500x500.png"
+    },
+    {
+        "name": "MAYAN EMPIRE",
+        "type": "135",
+        "img": "jl/v3/GAMEID_135_500x500_EN.png"
+    },
+    {
+        "name": "Samba",
+        "type": "136",
+        "img": "jl/v3/GAMEID_136_EN.png"
+    },
+    {
+        "name": "Gold Rush",
+        "type": "137",
+        "img": "jl/v3/GAMEID_137_500x500_EN.png"
+    },
+    {
+        "name": "Bonus Hunter",
+        "type": "142",
+        "img": "jl/v3/GAMEID_142_EN.png"
+    },
+    {
+        "name": "JILI Caishen",
+        "type": "144",
+        "img": "jl/v3/GAMEID_144_EN.png"
+    },
+    {
+        "name": "NekoFortune",
+        "type": "145",
+        "img": "jl/v3/146x136_EN_GAMEID_145.png"
+    },
+    {
+        "name": "World Cup",
+        "type": "146",
+        "img": "jl/v3/GAMEID_146_EN.png"
+    },
+    {
+        "name": "Crazy Pusher",
+        "type": "153",
+        "img": "jl/v3/GAMEID_153_EN_500x500.png"
+    },
+    {
+        "name": "Pirate Queen",
+        "type": "164",
+        "img": "jl/v3/146x136_EN_GAMEID_164.png"
+    },
+
+    {
+        "name": "Wild Racer",
+        "type": "166",
+        "img": "jl/v3/GAMEID_166_EN.png"
+    },
+    {
+        "name": "WildAce",
+        "type": "181",
+        "img": "jl/v3/146x136_EN_GAMEID_181.png"
+    },
+    {
+        "name": "Golden Joker",
+        "type": "183",
+        "img": "jl/v3/146x136_EN_GAMEID_183.png"
+    }
+
+]

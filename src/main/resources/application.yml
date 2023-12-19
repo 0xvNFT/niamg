@@ -1,0 +1,62 @@
+jdbc:
+    url: 'jdbc:postgresql://localhost/mlang3?useSSL=false'
+    username: postgres
+    password: 123456
+    read:
+        url: 'jdbc:postgresql://localhost/mlang3?useSSL=false'
+        username: postgres
+        password: 123456
+
+sys:
+    control:
+        domain: localhost
+    mode:
+        develop: true
+    general:
+        domain: yunji9.com
+    i18n:
+        cacheSeconds: 5
+shell:
+    file:
+        path:
+ip:
+    white:
+        manager:
+        admin: 127.0.0.1,127.0.0.33,127.0.0.44
+        receive: 127.0.0.1,192.168.9.220,192.168.9.128
+encrypt:
+    key:
+        data: enc:jEFnttCJkgx3CY8kC8hGdAmXwz+1GXuMVHF4jSkTBwGAyXoBoTkTRQ==
+        pay: enc:jEFnttCJkgx3CY8kC8hGdAmXwz+1GXuMVHF4jSkTBwGAyXoBoTkTRQ==
+
+redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    maxTotal: 200
+    maxIdle: 8
+    minIdle: 2
+    blockWhenExhausted: true
+    maxWait: 10000
+    testOnBorrow: true
+    testOnReturn: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 30000
+    minEvictableIdleTimeMillis: 10000
+    cluster:
+        confs: 127.0.0.1:6379:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+
+username:
+    partner:
+        root: root
+        rootPwd: 111111
+        admin: admin
+        adminPwd: 111111
+    admin:
+        root: root
+        rootPwd: 111111
+        user: admin
+        userPwd: 111111
+spring:
+    thymeleaf:
+        cathe:false

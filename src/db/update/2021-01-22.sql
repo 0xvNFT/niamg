@@ -1,0 +1,1 @@
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (319, '超级签次数', 'admin.super.sign.count', '/superSignCount.do', 9, 6, '', 'admin:sys:supersign', 3);

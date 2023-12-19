@@ -1,0 +1,1 @@
+ALTER TABLE "public"."sys_user_footprint_games" ADD COLUMN "is_sub_game" int2

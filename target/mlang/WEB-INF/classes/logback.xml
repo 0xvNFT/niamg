@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+	<!-- 控制台输出日志 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{MM-dd HH:mm:ss.SSS} %level %logger [%thread] - %msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<!-- 出错日志 appender -->
+	<appender name="ERROR"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.home}/logs/error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${catalina.home}/logs/error%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<maxHistory>10</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<encoder>
+			<Pattern>%d{MM-dd HH:mm:ss.SSS} %level %logger [%thread] - %msg%n
+			</Pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<logger name="org.springframework" level="error" />
+	<logger name="org.springframework.web" level="error" />
+	<logger name="org.springframework.orm" level="error" />
+	<logger name="org.springframework.data" level="error" />
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="ERROR" />
+	</root>
+</configuration>

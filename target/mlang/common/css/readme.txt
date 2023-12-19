@@ -1,0 +1,1 @@
+r.js -o cssIn=main.css out=main-min.css

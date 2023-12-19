@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-4.3.xsd
+    http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/tx  
+    http://www.springframework.org/schema/tx/spring-tx-4.3.xsd  
+    http://www.springframework.org/schema/aop  
+    http://www.springframework.org/schema/aop/spring-aop-4.3.xsd  
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+	<context:component-scan base-package="com.play">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+	</context:component-scan>
+
+	<!-- 这里的local-override="true" 就是覆盖spring容器中已存在的属性，properties-ref="dataSourceProperties" 
+		是指定自己的properties -->
+	<!-- <context:property-placeholder
+		local-override="true" properties-ref="configProperties" file-encoding="UTF-8"
+		ignore-resource-not-found="true" ignore-unresolvable="true" /> -->
+	<!-- 这个类是我自定义的，用来解密jdbc.properties中的属性之后然后存放到Properties类中 -->
+	<!-- <bean id="configProperties" class="com.play.spring.extra.ConfigProperties"></bean> -->
+  	
+  	<!-- HikariCP 高性能数据库连接池 -->
+    <bean id="dataSourceHikari" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+   		<property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+        <!-- Default settings -->
+        <!-- 控制自动提交行为 default：true -->
+        <property name="autoCommit" value="true"/>
+        <!--连接池获取的连接是否只读 default:false-->
+        <property name="readOnly" value="false"/>
+        <!--控制连接的事务隔离等级 default
+        <property name="transactionIsolation" value="default"/>-->
+        <!--设置catalog以便于支持查看catalogs ， 若不指定的话将直接使用 JDBC driver使用的 default:none-->
+        <property name="catalog" value="none"/>
+        <!-- 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 缺省:30秒-->
+        <property name="connectionTimeout" value="30000"/>
+        <!--一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10分钟   -->
+        <property name="idleTimeout" value="600000"/>
+        <!--一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒-->
+        <property name="maxLifetime" value="1800000 "/>
+        <!-- 连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count) -->
+		<property name="maximumPoolSize" value="49" />
+       	<property name="minimumIdle" value="10" />
+    </bean>
+
+	<!-- 事务配置 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSourceHikari" />
+	</bean>
+
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="select*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="list*" read-only="true" />
+			<tx:method name="page*" read-only="true" />
+			<tx:method name="load*" read-only="true" />
+			<tx:method name="is*" read-only="true" />
+			<tx:method name="count*" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" rollback-for="java.lang.Exception" />
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- 以AspectJ方式 定义 AOP -->
+
+	<aop:config proxy-target-class="true">
+		<aop:advisor pointcut="execution(* com.play.service.*.impl.*.*(..))" advice-ref="txAdvice" />
+		<aop:advisor pointcut="execution(* com.play.service.impl.*.*(..))" advice-ref="txAdvice" />
+		<aop:advisor pointcut="execution(* com.play..*.service.impl.*.*(..))" advice-ref="txAdvice" />
+	</aop:config>
+
+	<!-- 支持 @Transactional -->
+	<tx:annotation-driven />
+
+	<!-- 支持 @AspectJ -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<context:annotation-config />
+	
+	<import resource="applicationContext-quartz2.xml"/>
+<!--	<import resource="spring-mail.xml"/>-->
+</beans>

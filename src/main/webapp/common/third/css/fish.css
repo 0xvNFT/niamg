@@ -1,0 +1,46 @@
+*{padding:0;margin:0;font-family:"微软雅黑";}
+li{list-style:none;}
+body{background:url(../images/fish/bg.png);}
+.Max-Center{width:1210px;height:78.87%;margin:0 auto;margin-top:20px;position:relative;}
+.Max-Center .left{width:278px;height:765px;background:url(../images/fish/left.png);position:absolute;left:0;bottom:0;}
+.Max-Center .left .XTB{width:329px;height:74px;background:url(../images/fish/Add.png);position:absolute;top:113px;left:-18px;}
+.Max-Center .left .list{width:241px;height:471px;margin-top:262px;margin-left:20px;overflow-x:hidden;}
+.Max-Center .left .list ul li{width:227px;height:139px;margin-bottom:27px;}
+.Max-Center .left .list ul li:last-child{margin-bottom:0;}
+.Max-Center .left .list ul .active span{color:#482615;}
+.Max-Center .left .list ul .active b{color:#482615;}
+.Max-Center .left .list ul li div{width:227px;height:139px;position:relative;}
+.Max-Center .left .list ul li p{position:absolute;top:37px;left:34px;}
+.Max-Center .left .list ul li b{font-size:21px;font-family:FZZhengHeiS-DB-GB;font-weight:bold;color:#fff;position:relative;top:2px;}
+.Max-Center .left .list ul li span{font-size:18px;font-family:FZZhengHeiS-DB-GB;font-weight:bold;color:#fff;}
+.Max-Center .left .list .gpk{background:url(../images/fish/gpk.png);}
+.Max-Center .left .list .bg{background:url(../images/fish/bgby.png);}
+.Max-Center .left .list .bbin{background:url(../images/fish/bbin.png);}
+.Max-Center .left .list .ag{background:url(../images/fish/ag.png);}
+.Max-Center .right{width:914px;height:846px;float:right;}
+.Max-Center .right .title{width:724px;height:239px;margin:0 auto;}
+.Max-Center .right .YX-content{width:914px;height:662px;background:url(../images/fish/title-bottom.png);position:absolute;bottom:0;right:0;}
+.Max-Center .right .YX-content .content-Details{height:557px;width:845px;margin-top:62px;margin-left:32px;overflow-x:hidden;}
+.Max-Center .right .YX-content .content-Details ul li{margin-bottom:25px;}
+.Max-Center .right .YX-content .content-Details ul li:last-child{margin-bottom:0;}
+.Max-Center .right .YX-content .content-Details .content-Details-text{position:relative;}
+.Max-Center .right .YX-content .content-Details .content-Details-text span{width:395px;height:50px;position:absolute;left:100px;top:40px;line-height:50px;text-align:center;font-size:36px;font-family:Adobe Heiti Std;font-weight:normal;color:#482615;}
+.Max-Center .right .YX-content .content-Details a:hover span{color:#fff;}
+.content-Details .fd{display:none;}
+/* 游戏center详情动画 */
+.content-Details-text{cursor:pointer;transition:all 0.3s;}
+.content-Details-text:hover{transform:scale(1.02);}
+/* 游戏列表动画 */
+.list .active div{cursor:pointer;transition:all 0.6s;}
+.list .active div:hover{transform:scale(1.07);}
+.list .active div{transform:scale(1.07);}
+::-webkit-scrollbar{width:4px; /*对垂直流动条有效*/height:10px; /*对水平流动条有效*/}
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb{width:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#3481dd;}
+/*定义右下角汇合处的样式*/::-webkit-scrollbar-corner{background:khaki;}
+
+.pop-login{display:none;z-index: 1000;padding:10px 0px 0px 100px;}
+.pop-login .sub{text-decoration:none;height: 40px;width: 165px;line-height: 40px;text-align: center;color: #fff;background-color: #34495e;font-size: 18px;border: 0;border-radius: 3px;*margin-left: -63px;outline: none;display:block;padding: 10px 20px;}
+.pop-login .sub:hover {background-color: #57667b;}
+.pop-login .sub:active {background-color: #2e4154;}
+.init-highlight {background-color: #009999;}

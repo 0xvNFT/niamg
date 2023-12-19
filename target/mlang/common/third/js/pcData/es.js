@@ -1,0 +1,228 @@
+var esdata = [
+    {
+        "name": "Lucky Streak 3",
+        "type": "endorphina2_3LuckyStreak",
+        "img": "es/Lucky Streak 3.png"
+    },
+    {
+        "name": "Ultra Fresh",
+        "type": "endorphina_UltraFresh",
+        "img": "es/Ultra Fresh.png"
+    },
+    {
+        "name": "2021 Hit Slot",
+        "type": "endorphina2_2021HitSlot",
+        "img": "es/2021 Hit Slot.png"
+    },
+    {
+        "name": "2022 Hit Slot",
+        "type": "endorphina2_2022HitSlot",
+        "img": "es/2022 Hit Slot.png"
+    },
+    {
+        "name": "The Emirate",
+        "type": "endorphina_TheEmirate",
+        "img": "es/TheEmirates.png"
+    },
+
+    {
+        "name": "Hell Hot 100",
+        "type": "endorphina2_HellHot100",
+        "img": "es/Hell Hot 100.png"
+    },
+    {
+        "name": "2020 Hit Slot",
+        "type": "endorphina2_2020HitSlot",
+        "img": "es/2020 Hit Slot.png"
+    },
+    {
+        "name": "Lucky Streak 3 (Dice)",
+        "type": "endorphina2_3LuckyStreakDice",
+        "img": "es/luckstreak3dice.png"
+    },
+    {
+        "name": "Lucky Streak 1",
+        "type": "endorphina2_1LuckyStreak",
+        "img": "es/Lucky Streak 1.png"
+    },
+    {
+        "name": "Lucky Streak 2",
+        "type": "endorphina2_2LuckyStreak",
+        "img": "es/Lucky Streak 2.png"
+    },
+    {
+        "name": "Hell Hot 20",
+        "type": "endorphina2_HellHot20",
+        "img": "es/Hell Hot 20.png"
+    },
+    {
+        "name": "Joker Stoker",
+        "type": "endorphina2_JokerStoker",
+        "img": "es/Joker Stoker.png"
+    },
+    {
+        "name": "Royal X-mass",
+        "type": "endorphina2_RoyalXmass",
+        "img": "es/Royal X-mass.png"
+    },
+    {
+        "name": "3 Thunders",
+        "type": "endorphina2_3Thunders",
+        "img": "es/3 Thunders.png"
+    },
+    {
+        "name": "Cricket Heroes",
+        "type": "endorphina2_CricketHeroes",
+        "img": "es/Cricket Heroes.png"
+    },
+    {
+        "name": "The Emirate 2",
+        "type": "endorphina2_TheEmirate2",
+        "img": "es/The Emirate 2.png"
+    },
+    {
+        "name": "Joker Ra",
+        "type": "endorphina2_JokerRa",
+        "img": "es/Joker Ra.png"
+    },
+    {
+        "name": "Fresh Fruits",
+        "type": "endorphina_FreshFruits",
+        "img": "es/fresh fruits.png"
+    },
+    {
+        "name": "Hell Hot 40",
+        "type": "endorphina2_HellHot40",
+        "img": "es/Hell Hot 40.png"
+    },
+    {
+        "name": "Chance Machine 100",
+        "type": "endorphina2_ChanceMachine100",
+        "img": "es/chance machine100.png"
+    },
+    {
+        "name": "2023 Hit Slot",
+        "type": "endorphina2_2023HitSlot",
+        "img": "es/2023 hit slot.png"
+    },
+    {
+        "name": "Chance Machine 20",
+        "type": "endorphina2_ChanceMachine20",
+        "img": "es/chance machine 20.png"
+    },
+    {
+        "name": "Water Tiger",
+        "type": "endorphina2_WaterTiger",
+        "img": "es/water tiger.png"
+    },
+    {
+        "name": "Wild Love",
+        "type": "endorphina2_WildLove",
+        "img": "es/wild love.png"
+    },
+    {
+        "name": "Blue Slot",
+        "type": "endorphina2_BlueSlot",
+        "img": "es/blue slot.png"
+    },
+    {
+        "name": "Cash Streak",
+        "type": "endorphina2_CashStreak",
+        "img": "es/cash streak.png"
+    },
+    {
+        "name": "Magnum Opus",
+        "type": "endorphina2_MagnumOpus",
+        "img": "es/magnum opus.png"
+    },
+    {
+        "name": "Chance Machine 40",
+        "type": "endorphina2_ChanceMachine40",
+        "img": "es/chance machine 40.png"
+    },
+    {
+        "name": "7 BONUS UP!",
+        "type": "endorphina2_7up",
+        "img": "es/7 BONUS UP!.png"
+    },
+    {
+        "name": "Lucky Cloverland",
+        "type": "endorphina2_LuckyCloverland",
+        "img": "es/Lucky Cloverland.png"
+    },
+    {
+        "name": "Wild Streak",
+        "type": "endorphina2_WildStreak",
+        "img": "es/Wild Streak.png"
+    },
+    {
+        "name": "Book Of Santa",
+        "type": "endorphina2_BookOfSanta",
+        "img": "es/Book of Santa.png"
+    },
+    {
+        "name": "Chance Machine 5",
+        "type": "endorphina2_ChanceMachine5",
+        "img": "es/Chance Machine 5.png"
+    },
+    {
+        "name": "Buffalo 50",
+        "type": "endorphina2_Buffalo50",
+        "img": "es/buffaio 50.png"
+    },
+    {
+        "name": "Riches of Caliph",
+        "type": "endorphina2_RichesOfCaliph",
+        "img": "es/Riches of Caliph.png"
+    },
+    {
+        "name": "Fruletta",
+        "type": "endorphina2_Fruletta",
+        "img": "es/Fruletta.png"
+    },
+    {
+        "name": "Troll Haven",
+        "type": "endorphina2_TrollHaven",
+        "img": "es/Troll Haven.png"
+    },
+    {
+        "name": "Sparkling Fresh",
+        "type": "endorphina_SparklingFresh",
+        "img": "es/sparkling fresh.png"
+    },
+    {
+        "name": "Akbar&Birbal",
+        "type": "endorphina2_AkbarBirbal",
+        "img": "es/AkbarBirbal.png"
+    },
+    {
+        "name": "Lucky Streak 2 (Dice)",
+        "type": "endorphina2_2LuckyStreakDice",
+        "img": "es/luck-streak2dice.png"
+    },
+    {
+        "name": "Green Slot",
+        "type": "endorphina2_GreenSlot",
+        "img": "es/Green Slot.png"
+    },
+    {
+        "name": "Giant Wild Goose Pagoda",
+        "type": "endorphina2_GiantWildGoosePagoda",
+        "img": "es/Giant Wild Goose Pagoda.png"
+    },
+    {
+        "name": "Fisher King",
+        "type": "endorphina2_FisherKing",
+        "img": "es/fresh king.png"
+    },
+    {
+        "name": "Crystal Skull",
+        "type": "endorphina2_CrystalSkull",
+        "img": "es/Crystal Skull.png"
+    },
+    {
+        "name": "Rabbits Rabbits Rabbits",
+        "type": "endorphina2_Rabbits",
+        "img": "es/Rabbits.png"
+    }
+]

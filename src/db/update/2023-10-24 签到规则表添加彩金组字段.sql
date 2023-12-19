@@ -1,0 +1,1 @@
+ALTER TABLE "public"."station_sign_rule" ADD COLUMN "day_gift_config" varchar(700)

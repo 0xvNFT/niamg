@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word !important;
+}
+
+/* 修正IE5.x和IE6的斜体溢出bug */
+* html body {
+  overflow: visible;
+}
+
+* html iframe,
+* html frame {
+  overflow: auto;
+}
+
+* html frameset {
+  overflow: hidden;
+}
+html body {
+  background-color: $bgColor;
+}
+body {
+  font-size: 14px;
+  line-height: 1.5715;
+  // min-width: 980px;
+  overflow-x: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+select {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* 标签属性，textarea,input 强制输入时内容超出时换行 */
+textarea,
+input {
+  word-wrap: break-word;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a img,
+iframe {
+  border: none;
+}
+
+/* 去掉链接的虚线框 */
+a {
+  outline: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* 定义H系列标签，覆盖H系列标签默认属性 */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+// 去掉number框上下箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none !important;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.ellipsis2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.el-empty__description {
+  margin-top: unset !important;
+}
+.noDataDiv {
+  text-align: center;
+
+  img {
+    // width: 150px;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.themeBtn{
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0.8rem !important;
+  font-weight: 900 !important;
+  cursor: pointer;
+  line-height: 0rem !important;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.smallCloseBtn {
+  background: linear-gradient(25deg, #8b181b, #de1f27) !important;
+  box-shadow: 0 2px 4px #ff686f !important;
+  height: 2rem !important;
+  padding: 1rem 1rem !important;
+}
+
+.smallSureBtn {
+  background: linear-gradient(12deg, #196b97, #01b0c4) !important;
+  box-shadow: 0 2px 4px #01b0c4 !important;
+  height: 2rem !important;
+  padding: 1rem 1rem !important;
+  margin-left: 20px !important;
+}
+
+.closeBtn {
+  background: linear-gradient(25deg, #8b181b, #de1f27) !important;
+  box-shadow: 0 4px 8px #ff686f !important;
+  height: 2.5rem !important;
+  padding: 0 2.5rem !important;
+}
+
+.sureBtn {
+  background: linear-gradient(25deg, #196b97, #01b0c4) !important;
+  height: 2.5rem !important;
+  padding: 0 2.5rem !important;
+  box-shadow: 0 4px 8px #68c7d2 !important;
+  margin-left: 50px;
+}
+
+.icon-refresh {
+  cursor: pointer;
+  user-select: none;
+  width: 19px;
+  margin: 10px;
+}
+// 循环转圈
+.refreshing{
+  animation: roli_rotate 1s linear;
+  pointer-events: none;
+}
+@keyframes roli_rotate {
+  0% {
+    transform: rotate(0)
+  }
+  50% {
+    transform: rotate(1turn)
+  }
+  to {
+    transform: rotate(1turn)
+
+  }
+}
+
+@media (max-width:1080px) {
+  body {
+    overflow-x: auto;
+  }
+}

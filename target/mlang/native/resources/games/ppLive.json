@@ -1,0 +1,87 @@
+[
+      {
+        "name" : "Mega Wheel",
+        "img" : "pp/v2/Mega-Wheel.png",
+        "type" : "live_801"
+      },
+      {
+        "name" : "Mega Sic Bo",
+        "img" : "pp/v2/Mega-Sic-Bo.png",
+        "type" : "live_701"
+      },
+      {
+        "name" : "Sweet Bonanza CandyLand",
+        "img" : "pp/v2/Sweet-Bonanza-CandyLand.png",
+        "type" : "live_1101"
+      },
+      {
+        "name" : "Mega Roulette",
+        "img" : "pp/v2/Mega-Roulette.png",
+        "type" : "live_204"
+      },
+      {
+        "name" : "Speed Baccarat 1",
+        "img" : "pp/v2/Speed-Baccarat-1.png",
+        "type" : "live_402"
+      },
+      {
+        "name" : "Baccarat 1",
+        "img" : "pp/v2/Baccarat-1.png",
+        "type" : "live_401"
+      },
+      {
+        "name" : "Dragon Tiger",
+        "img" : "pp/v2/Dragon-Tiger.png",
+        "type" : "live_1001"
+      },
+      {
+        "name" : "PowerUP Roulette",
+        "img" : "pp/v2/PowerUP-Roulette.png",
+        "type" : "live_240"
+      },
+      {
+        "name" : "Boom City",
+        "img" : "pp/v2/Boom-City.png",
+        "type" : "live_1401"
+      },
+      {
+        "name" : "Speed Roulette 1",
+        "img" : "pp/v2/SpeedRoulette-1.png",
+        "type" : "live_203"
+      },
+      {
+        "name" : "Roulette 2",
+        "img" : "pp/v2/Roulette-2.png",
+        "type" : "live_201"
+      },
+      {
+        "name" : "Roulette 10 - Ruby",
+        "img" : "pp/v2/Roulette10-Ruby.png",
+        "type" : "live_230"
+      },
+      {
+        "name" : "Auto-Roulette 1",
+        "img" : "pp/v2/Auto-Roulette-1.png",
+        "type" : "live_225"
+      },
+      {
+        "name" : "Roulette 8 - Indian",
+        "img" : "pp/v2/Roulette8-Indian.png",
+        "type" : "live_229"
+      },
+      {
+        "name" : "Andar Bahar",
+        "img" : "pp/v2/Andar-Bahar.png",
+        "type" : "live_1024"
+      },
+      {
+        "name" : "ONE Blackjack",
+        "img" : "pp/v2/ONE-Blackjack.png",
+        "type" : "live_901"
+      },
+      {
+        "name" : "BetVictor ONE Blackjack",
+        "img" : "pp/v2/BetVictor-ONE-Blackjack.png",
+        "type" : "live_902"
+      }
+]

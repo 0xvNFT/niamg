@@ -1,0 +1,168 @@
+var pgdata = [
+    {
+        "name": "Fortune Tiger",
+        "type": "126",
+        "img": "pg/v3/fortune-tiger_web-banner_500_500_en.png"
+    },
+    {
+        "name": "Fortune Rabbit",
+        "type": "1543462",
+        "img": "pg/v3/fortune-rabbit_web-banner_en.png"
+    },
+    {
+        "name": "Fortune Ox",
+        "type": "98",
+        "img": "pg/v3/fortune-ox_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Fortune Mouse",
+        "type": "68",
+        "img": "pg/v3/fortune-mouse_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Dragon Hatch",
+        "type": "57",
+        "img": "pg/v3/dragon-legend_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Ganesha Gold",
+        "type": "42",
+        "img": "pg/v3/ganesha-gold_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Dragon Tiger Luck",
+        "type": "63",
+        "img": "pg/v3/dragon-tiger-luck_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Piggy Gold",
+        "type": "39",
+        "img": "pg/v3/piggy-gold_web_banner_500x500_en.png"
+    },
+    {
+        "name": "Double Fortune",
+        "type": "48",
+        "img": "pg/v3/double-fortune_web-banner_500_500_en.png"
+    },
+    {
+        "name": "Wild Bandito",
+        "type": "104",
+        "img": "pg/v3/wild-bounty-showdown_web-banner_500_500_en.png"
+    },
+    {
+        "name": "Jungle Delight",
+        "type": "40",
+        "img": "pg/v3/jungle-delight_web_banner_500_500_en.png"
+    },
+    {
+        "name": "The Great Icescape",
+        "type": "53",
+        "img": "pg/v3/the-great-Icescape_web_banner_500x500_en.png"
+    },
+    {
+        "name": "Lucky Neko",
+        "type": "89",
+        "img": "pg/v3/lucky-neko_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Ganesha Fortune",
+        "type": "75",
+        "img": "pg/v3/ganesha-fortune_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Midas Fortune",
+        "type": "1402846",
+        "img": "pg/v3/midas-fortune_web-banner_en.png"
+    },
+    {
+        "name": "Bikini Paradise",
+        "type": "69",
+        "img": "pg/v3/bikini-paradise_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Supermarket Spree",
+        "type": "115",
+        "img": "pg/v3/supermarket-spree_500_500_en.png"
+    },
+    {
+        "name": "Lucky Piggy",
+        "type": "130",
+        "img": "pg/v3/lucky-piggy_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Captain's Bounty",
+        "type": "54",
+        "img": "pg/v3/caishen-wins_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Genie's 3 Wishes",
+        "type": "85",
+        "img": "pg/v3/genie-3-wishes_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Cocktail Nights",
+        "type": "117",
+        "img": "pg/v3/cocktail-nights_500_500_en.png"
+    },
+    {
+        "name": "Circus Delight",
+        "type": "80",
+        "img": "pg/v3/circus-delight_web-banner_en.png"
+    },
+    {
+        "name": "Wild Bounty Showdown",
+        "type": "135",
+        "img": "pg/v3/wild-bounty-showdown_web-banner_500_500_en.png"
+    },
+    {
+        "name": "Queen of Bounty",
+        "type": "84",
+        "img": "pg/v3/queen-of-bounty_web-banner_en.png"
+    },
+    {
+        "name": "Muay Thai Champion",
+        "type": "64",
+        "img": "pg/v3/muay-thai-champion_web-banner_en.png"
+    },
+    {
+        "name": "Treasures of Aztec",
+        "type": "87",
+        "img": "pg/v3/treasure-of-aztec_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Jurassic Kingdom",
+        "type": "110",
+        "img": "pg/v3/jurassic-kingdom_web-banner_en.png"
+    },
+    {
+        "name": "Mahjong Ways 2",
+        "type": "74",
+        "img": "pg/v3/mahjong-ways2_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Phoenix Rises",
+        "type": "82",
+        "img": "pg/v3/phoenix-rises_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Cai Shen Wins",
+        "type": "71",
+        "img": "pg/v3/caishen-wins_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Mahjong Ways 2",
+        "type": "74",
+        "img": "pg/v3/caishen-wins_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Win Win Fish Prawn Crab",
+        "type": "129",
+        "img": "pg/v3/caishen-wins_web_banner_500_500_en.png"
+    },
+    {
+        "name": "Tsar Treasures",
+        "type": "1655268",
+        "img": "pg/v3/1655268_en.png"
+    }
+
+]

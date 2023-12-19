@@ -1,0 +1,242 @@
+[
+  {
+    "name" : "Gold Class",
+    "img" : "ag/v3/Gold-Class.png",
+    "type" : "XIN_SC03"
+  },
+  {
+    "name" : "Mahjong Slot",
+    "img" : "ag/v3/Mahjong-Slot.png",
+    "type" : "XIN_SB08"
+  },
+  {
+    "name" : "Pillar of Fortune",
+    "img" : "ag/v3/Pillar-of-Fortune.png",
+    "type" : "XIN_WH48"
+  },
+  {
+    "name" : "The Dragon Pearl Gold",
+    "img" : "ag/v3/The-Dragon-Pearl-Gold.png",
+    "type" : "XIN_SB49"
+  },
+  {
+    "name" : "Wild 777",
+    "img" : "ag/v3/Wild-777.png",
+    "type" : "XIN_SC05"
+  },
+  {
+    "name" : "Lucky Riches",
+    "img" : "ag/v3/Lucky-Riches.png",
+    "type" : "XIN_SB64"
+  },
+  {
+    "name" : "Vegas Vegas",
+    "img" : "ag/v3/Vegas-Vegas.png",
+    "type" : "XIN_SB56"
+  },
+  {
+    "name" : "Space Odyssey",
+    "img" : "ag/v3/Space-Odyssey.png",
+    "type" : "XIN_SB01"
+  },
+  {
+    "name" : "Gold Class Deluxe",
+    "img" : "ag/v3/Gold-Class-Deluxe.png",
+    "type" : "XIN_SC07"
+  },
+  {
+    "name" : "Wild Koi",
+    "img" : "ag/v3/Wild-Koi.png",
+    "type" : "XIN_SB67"
+  },
+  {
+    "name" : "Fruit Slot",
+    "img" : "ag/v3/Fruit-Slot.png",
+    "type" : "XIN_FRU"
+  },
+  {
+    "name" : "Wild Gods",
+    "img" : "ag/v3/Wild-Gods.png",
+    "type" : "XIN_SB62"
+  },
+  {
+    "name" : "God of Wu Fortune",
+    "img" : "ag/v3/God-of-Wu-Fortune.png",
+    "type" : "XIN_SB28"
+  },
+  {
+    "name" : "Evil Dragons",
+    "img" : "ag/v3/Evil-Dragons.png",
+    "type" : "XIN_SB57"
+  },
+  {
+    "name" : "Royal Gems",
+    "img" : "ag/v3/Royal-Gems.png",
+    "type" : "XIN_SB72"
+  },
+  {
+    "name" : "Sex and Zen",
+    "img" : "ag/v3/Sex-and-Zen.png",
+    "type" : "XIN_WH62"
+  },
+  {
+    "name" : "Pirates Ahoy!",
+    "img" : "ag/v3/Pirates-Ahoy.png",
+    "type" : "XIN_SB68"
+  },
+  {
+    "name" : "Garden Vintage",
+    "img" : "ag/v3/Garden-Vintage-5.png",
+    "type" : "XIN_SB02"
+  },
+  {
+    "name" : "Fruit Slot 2",
+    "img" : "ag/v3/Fruit-Slot-2.png",
+    "type" : "XIN_FRU2"
+  },
+  {
+    "name" : "Year of the Monkey",
+    "img" : "ag/v3/Year-of-the-Monkey.png",
+    "type" : "XIN_SB30"
+  },
+  {
+    "name" : "Kong Invasion",
+    "img" : "ag/v3/Kong-Invasion.png",
+    "type" : "XIN_SB66"
+  },
+  {
+    "name" : "Legend of the Dragon",
+    "img" : "ag/v3/Legend-of-the-Dragon.png",
+    "type" : "XIN_SB45"
+  },
+  {
+    "name" : "Candy Quest",
+    "img" : "ag/v3/Candy-Quest.png",
+    "type" : "XIN_SB33"
+  },
+  {
+    "name" : "Sexy Succubus",
+    "img" : "ag/v3/Sexy-Succubus.png",
+    "type" : "XIN_SB58"
+  },
+  {
+    "name" : "Samurai",
+    "img" : "ag/v3/Samurai.png",
+    "type" : "XIN_SB06"
+  },
+  {
+    "name" : "Animal Fun Park",
+    "img" : "ag/v3/Animal-Fun-Park.png",
+    "type" : "XIN_SB70"
+  },
+  {
+    "name" : "Beast Party",
+    "img" : "ag/v3/Beast-Party.png",
+    "type" : "XIN_SC06"
+  },
+  {
+    "name" : "Knight and Dragon",
+    "img" : "ag/v3/Knight-and-Dragon.png",
+    "type" : "XIN_SB65"
+  },
+  {
+    "name" : "Mystic Gems",
+    "img" : "ag/v3/Mystic-Gems.png",
+    "type" : "XIN_SB47"
+  },
+  {
+    "name" : "Kung Fu All Stars",
+    "img" : "ag/v3/Kung-Fu-All-Stars.png",
+    "type" : "XIN_SB59"
+  },
+  {
+    "name" : "Mr XIN",
+    "img" : "ag/v3/Mr-XIN.png",
+    "type" : "XIN_SB50"
+  },
+  {
+    "name" : "Egyptian Treasure",
+    "img" : "ag/v3/Egyptian-Treasure.png",
+    "type" : "XIN_WH28"
+  },
+  {
+    "name" : "Golden Dragon",
+    "img" : "ag/v3/Golden-Dragon.png",
+    "type" : "XIN_WH31"
+  },
+  {
+    "name" : "Festival Lions",
+    "img" : "ag/v3/Festival-Lions.png",
+    "type" : "XIN_WH07"
+  },
+  {
+    "name" : "Ace Heist",
+    "img" : "ag/v3/Ace-Heist.png",
+    "type" : "XIN_SB60"
+  },
+  {
+    "name" : "Panda's Gold",
+    "img" : "ag/v3/Pandas-Gold.png",
+    "type" : "XIN_WH12"
+  },
+  {
+    "name" : "Mermaid Treasure",
+    "img" : "ag/v3/Mermaid-Treasure.png",
+    "type" : "XIN_WH56"
+  },
+  {
+    "name" : "Fortune Alchemy",
+    "img" : "ag/v3/Fortune-Alchemy.png",
+    "type" : "XIN_WH30"
+  },
+  {
+    "name" : "Treasure Party",
+    "img" : "ag/v3/Treasure-Party.png",
+    "type" : "XIN_SB73"
+  },
+  {
+    "name" : "Chinese Zodiac",
+    "img" : "ag/v3/Chinese-Zodiac.png",
+    "type" : "XIN_WH38"
+  },
+  {
+    "name" : "Ice Crush",
+    "img" : "ag/v3/Ice-Crush.png",
+    "type" : "XIN_SB34"
+  },
+  {
+    "name" : "Bingo Slot",
+    "img" : "ag/v3/Bingo-Slot.png",
+    "type" : "XIN_SB63"
+  },
+  {
+    "name" : "Street Battle",
+    "img" : "ag/v3/Street-Battle.png",
+    "type" : "XIN_SX02"
+  },
+  {
+    "name" : "Lucky Express",
+    "img" : "ag/v3/Lucky-Express.png",
+    "type" : "XIN_WH58"
+  },
+  {
+    "name" : "Bao Zu Po",
+    "img" : "ag/v3/Bao-Zu-Po.png",
+    "type" : "XIN_WH52"
+  },
+  {
+    "name" : "Chinese Chess Slot",
+    "img" : "ag/v3/Chinese-Chess-Slot.png",
+    "type" : "XIN_SB07"
+  },
+  {
+    "name" : "Alibaba",
+    "img" : "ag/v3/Alibaba.png",
+    "type" : "XIN_WH01"
+  },
+  {
+    "name" : "Young and Dangerous",
+    "img" : "ag/v3/Young-and-Dangerous.png",
+    "type" : "XIN_WH42"
+  }
+]

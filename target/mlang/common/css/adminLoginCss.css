@@ -1,0 +1,43 @@
+body {font-family: 'PT Sans', Helvetica, Arial, sans-serif;color: #555;font-size: 16px;font-weight: 400;background: url("./loginImg/yino.jpg");}
+a:hover { text-decoration: none; }
+.login-container{margin-top: 50px;}
+.logo{height:71px;}
+.login{margin-top: 24px;padding: 10px;background: rgba(255, 255, 255, 0.15);border: 4px solid #020A23;border-radius: 10px;}
+.login .login-form {padding: 25px;background: #020A23;-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;-moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);}
+.login .login-form label {margin: 7px 0 10px 5px;font-size: 16px;color: #7EBEED;}
+.login .login-form .input-group-addon{padding:6px 10px 0px 10px;}
+.login .login-form .addon2{padding:0px 4px;}
+.login .login-form .glyphicon{color:#4a5f9f;font-size:30px;}
+.login .login-form button {
+    cursor: pointer;
+    width: 97%;
+    height: 42px;
+    margin-top: 25px;
+    padding: 0;
+    background: #FFB400;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+.login .login-form button:hover {-moz-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.4) inset;-webkit-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.4) inset;box-shadow: 0 -15px 30px 0 rgba(255,255,255,.4) inset;}
+.login .login-form button:active {-moz-box-shadow:0 -15px 30px 0 rgba(255,255,255,.4) inset,0 5px 8px 0 rgba(0,0,0,.1) inset;-webkit-box-shadow:0 -15px 30px 0 rgba(255,255,255,.4) inset,0 5px 8px 0 rgba(0,0,0,.1) inset;box-shadow:0 -15px 30px 0 rgba(255,255,255,.4) inset,0 5px 8px 0 rgba(0,0,0,.1) inset;}
+.qrcode{text-align:center;}
+.qrcode img{width:100px;height:100px;}
+.qrcode div{color:#e2ff41;}
+.right_footer{text-align:left;width:270px;margin-top:10px;}
+.right_footer li{margin: 7px 0;padding-left:40px;background:url("./loginImg/zhuyi_ico.png") no-repeat;}
+.right_footer a{color:#7EBEED;}
+.right_footer a:hover{color:#64a3d2;}

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	default-lazy-init="false">
+	<beans>
+		<!-- 生成bc_lottery_data_sys分表 -->
+		<bean id="createPartitionJob"
+			class="com.play.job.CreatePartitionJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="createPartitionJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="createPartitionJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>createTable</value>
+			</property>
+		</bean>
+		<bean id="createPartitionJobTrigger"
+			class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="createPartitionJobTask" />
+			</property>
+			<property name="startDelay">
+				<!-- 服务启动一分钟后执行 1*1000*60 -->
+				<value>5000</value>
+			</property>
+			<property name="repeatInterval"><!-- 10天执行一次 -->
+				<value>864000000</value>
+			</property>
+		</bean>
+
+		<!--在线用户状态维护 -->
+		<bean id="userOnlineJob" class="com.play.job.UserOnlineJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="userOnlineJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="userOnlineJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+		</bean>
+		
+		<bean id="userOnlineJobTrigger"
+			class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="userOnlineJobTask" />
+			</property>
+			<property name="startDelay">
+				<!-- 服务启动一分钟后执行 1*1000*60 -->
+				<value>5000</value>
+			</property>
+			<property name="repeatInterval"><!-- 10秒执行一次 -->
+				<value>5000</value>
+			</property>
+		</bean>
+		
+		<!-- 计算代理返点 -->
+		<bean id="calcProxyRollbackJob"
+			class="com.play.job.CalcProxyRollbackJob"></bean>
+		<bean id="calcProxyRollbackJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<property name="targetObject">
+				<ref bean="calcProxyRollbackJob" />
+			</property>
+			<property name="targetMethod">
+				<value>calcRollback</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+
+		<bean id="calcProxyRollbackJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="calcProxyRollbackJobTask" />
+			</property>
+			<property name="cronExpression">
+				<!-- 每天6点一次 -->
+				<value>0 0 6 * * ?</value>
+			</property>
+		</bean>
+
+		<!--抢红包记录自动派奖 -->
+		<bean id="redPacketRecordHandlerJob"
+			class="com.play.job.RedPacketRecordHandlerJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="redPacketRecordHandlerJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="redPacketRecordHandlerJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="redPacketRecordHandlerJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="redPacketRecordHandlerJobTask" />
+			</property>
+
+			<property name="cronExpression">
+				<!-- 每1分钟执行一次 -->
+				<value>0 * * * * ? </value>
+			</property>
+		</bean>
+
+		<!--大转盘中奖记录自动派奖 -->
+		<bean id="turntableHandlerJob"
+			class="com.play.job.TurntableHandlerJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="turntableHandlerJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="turntableHandlerJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="turntableHandlerJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="turntableHandlerJobTask" />
+			</property>
+
+			<property name="cronExpression">
+				<!-- 每30分钟执行一次 -->
+				<value>0 0/30 * * * ?</value>
+			</property>
+		</bean>
+
+		<!--过期充值提款记录自动失效 -->
+		<bean id="timeoutDepositDrawHandlerJob"
+			class="com.play.job.TimeOutDepositDrawHandleJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="timeoutDepositDrawHandlerJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="timeoutDepositDrawHandlerJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="timeoutDepositDrawHandlerJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="timeoutDepositDrawHandlerJobTask" />
+			</property>
+			<property name="cronExpression">
+				<!-- 每1分钟执行一次 -->
+				<value>0 * * * * ? </value>
+			</property>
+		</bean>
+
+		<!--站点每日存款报表 -->
+		<bean id="stationDailyDepositReportHandlerJob"
+			class="com.play.job.StationDailyDepositReportHandlerJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="stationDailyDepositReportHandlerJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="stationDailyDepositReportHandlerJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="stationDailyDepositReportHandlerJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="stationDailyDepositReportHandlerJobTask" />
+			</property>
+			<property name="cronExpression">
+				<!-- 每天凌晨2点30执行一次 -->
+				<value>0 30 2 * * ?</value>
+			</property>
+		</bean>
+
+
+        <!--站点每日首次提款策略 -->
+        <bean id="withdrawalGiftPolicyHandlerJob"
+              class="com.play.job.WithdrawalGiftPolicyHandlerJob" />
+        <!-- 定义调用对象和调用对象的方法 -->
+        <bean id="withdrawalGiftPolicyHandlerJobTask"
+              class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+            <!-- 调用的类 -->
+            <property name="targetObject">
+                <ref bean="withdrawalGiftPolicyHandlerJob" />
+            </property>
+            <!-- 调用类中的方法 -->
+            <property name="targetMethod">
+                <value>doExecute</value>
+            </property>
+            <property name="concurrent">
+                <value>false</value>
+            </property>
+        </bean>
+        <bean id="withdrawalGiftPolicyHandlerJobTrigger"
+              class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+            <property name="jobDetail">
+                <ref bean="withdrawalGiftPolicyHandlerJobTask" />
+            </property>
+            <property name="cronExpression">
+                <!-- 每天中午 12:00 执行一次 -->
+                <value>0 00 12 * * ?</value>
+            </property>
+        </bean>
+
+		<!--禁用站点长时间未登陆账号 -->
+		<bean id="noLoginAccountDisableJob"
+			class="com.play.job.NoLoginAccountDisableJob" />
+		<bean id="noLoginAccountDisableJobTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<property name="targetObject">
+				<ref bean="noLoginAccountDisableJob" />
+			</property>
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="noLoginAccountDisableJobTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="noLoginAccountDisableJobTask" />
+			</property>
+			<property name="cronExpression">
+				<!-- 每天凌晨三点执行一次 -->
+				<value>0 30 3 * * ?</value>
+			</property>
+		</bean>
+
+		<!-- 会员反水计算 -->
+		<bean id="autoBackwaterJob" class="com.play.job.AutoBackwaterJob" />
+		<!-- 定义调用对象和调用对象的方法 -->
+		<bean id="autoBackwaterTask"
+			class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="autoBackwaterJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+			<property name="concurrent">
+				<value>false</value>
+			</property>
+		</bean>
+		<bean id="autoBackwaterTrigger"
+			class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="autoBackwaterTask" />
+			</property>
+			<property name="cronExpression">
+				<!-- 每天六点执行 -->
+				<value>0 0 6 * * ?</value>
+			</property>
+		</bean>
+		
+		<!--清除tron波场 用户地址过期绑定 -->
+		<bean id="tronJobForUserAddressBindCleanJob" class="com.play.tronscan.alljob.TronJobForUserAddressBindClean" />
+		<bean id="tronJobForUserAddressBindCleanJobTask"
+			  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="tronJobForUserAddressBindCleanJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+		</bean>
+		<bean id="tronJobForUserAddressBindCleanJobTrigger"
+			  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="tronJobForUserAddressBindCleanJobTask" />
+			</property>
+			<property name="startDelay">
+				<!-- 服务启动一分钟后执行 -->
+				<value>60000</value>
+			</property>
+			<property name="repeatInterval">
+				<!-- 每10分钟执行一次 -->
+				<value>600000</value>
+			</property>
+		</bean>
+		
+		<!--tron波场 玩家转账采集器 -->
+		<bean id="tronJobForAdressCollectionJob" class="com.play.tronscan.alljob.TronJobForAdressCollection" />
+		<bean id="tronJobForAdressCollectionJobTask"
+			  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="tronJobForAdressCollectionJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+		</bean>
+		<bean id="tronJobForAdressCollectionJobTrigger"
+			  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="tronJobForAdressCollectionJobTask" />
+			</property>
+			<property name="startDelay">
+				<!-- 服务启动一分钟后执行 -->
+				<value>60000</value>
+			</property>
+			<property name="repeatInterval">
+				<value>0</value>
+			</property>
+			<property name="repeatCount">
+				<value>0</value>
+			</property>
+		</bean>
+		
+		<!--tron波场 玩家转账任务 -->
+		<bean id="tronJobForBalanceReloadJob" class="com.play.tronscan.alljob.TronJobForBalanceReload" />
+		<bean id="tronJobForBalanceReloadJobTask"
+			  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+			<!-- 调用的类 -->
+			<property name="targetObject">
+				<ref bean="tronJobForBalanceReloadJob" />
+			</property>
+			<!-- 调用类中的方法 -->
+			<property name="targetMethod">
+				<value>doExecute</value>
+			</property>
+		</bean>
+		<bean id="tronJobForBalanceReloadJobTrigger"
+			  class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+			<property name="jobDetail">
+				<ref bean="tronJobForBalanceReloadJobTask" />
+			</property>
+			<property name="startDelay">
+				<!-- 服务启动一分钟后执行 -->
+				<value>60000</value>
+			</property>
+			<property name="repeatInterval">
+				<value>0</value>
+			</property>
+			<property name="repeatCount">
+				<value>0</value>
+			</property>
+		</bean>
+		
+		<bean id="startQuertz" lazy-init="false" autowire="no"
+			class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+			<property name="triggers">
+				<list>
+					<!-- 生成分表 -->
+					<ref bean="createPartitionJobTrigger" />
+					<!-- 用户在线状态维护 -->
+					<ref bean="userOnlineJobTrigger" />
+					
+					<!-- 计算多级代理返点 -->
+					<ref bean="calcProxyRollbackJobTrigger" />
+					<!-- 红包派奖 -->
+					<ref bean="redPacketRecordHandlerJobTrigger" />
+
+					<!-- 大转盘中奖记录自动派奖 -->
+					<ref bean="turntableHandlerJobTrigger" />
+					<!--处理失效充值记录 -->
+					<ref bean="timeoutDepositDrawHandlerJobTrigger" />
+
+					<!--站点每日存款报表 -->
+					<ref bean="stationDailyDepositReportHandlerJobTrigger" />
+					<!--禁用长时间未登陆账号 -->
+					<ref bean="noLoginAccountDisableJobTrigger" />
+					<!-- 自动反水 -->
+					<ref bean="autoBackwaterTrigger" />
+					
+					<!--清除tron波场 用户地址过期绑定 -->
+					<ref bean="tronJobForUserAddressBindCleanJobTrigger" />
+					<!--波场 玩家转账采集器 -->
+					<ref bean="tronJobForAdressCollectionJobTrigger" />
+					<!--波场 玩家转账任务，将波场记录上分到银行入款表 -->
+					<ref bean="tronJobForBalanceReloadJobTrigger" />
+                    <!--每日提款赠送 每天中午12点赠送 -->
+                    <ref bean="withdrawalGiftPolicyHandlerJobTrigger" />
+				</list>
+			</property>
+		</bean>
+
+	</beans>
+</beans>

@@ -1,0 +1,57 @@
+[
+  {
+    "name" : "Aviator",
+    "img" : "vdd/v3/Aviator.png",
+    "type" : "VDD100_aviator"
+  },
+  {
+    "name" : "Mines",
+    "img" : "vdd/v3/Mines.png",
+    "type" : "VDD101_mines"
+  },
+  {
+    "name" : "Dice",
+    "img" : "vdd/v3/Dice.png",
+    "type" : "VDD102_dice"
+  },
+  {
+    "name" : "Mini Roulette",
+    "img" : "vdd/v3/Mini-Roulette.png",
+    "type" : "VDD103_mini-roulette"
+  },
+  {
+    "name" : "Plinko",
+    "img" : "vdd/v3/Plinko.png",
+    "type" : "VDD105_plinko"
+  },
+  {
+    "name" : "Keno",
+    "img" : "vdd/v3/Keno.png",
+    "type" : "VDD107_keno"
+  },
+  {
+    "name" : "Hilo",
+    "img" : "vdd/v3/Hilo.png",
+    "type" : "VDD104_hi-lo"
+  },
+  {
+    "name" : "Hotline",
+    "img" : "vdd/v3/Hotline.png",
+    "type" : "VDD108_hotline"
+  },
+  {
+    "name" : "Goal",
+    "img" : "vdd/v3/Goal.png",
+    "type" : "VDD106_goal"
+  }/*,
+  {
+    "name" : "Roulette",
+    "img" : "vdd/v3/Roulette.png",
+    "type" : "VDD109_roulette"
+  },
+  {
+    "name" : "Scratch-Off",
+    "img" : "vdd/v3/Scratch-Off.png",
+    "type" : "VDD110_scratch"
+  }*/
+]

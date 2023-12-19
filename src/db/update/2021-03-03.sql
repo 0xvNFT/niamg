@@ -1,0 +1,1 @@
+ALTER TABLE "public"."station_deposit_bank" ALTER COLUMN "real_name" TYPE varchar(50) COLLATE "pg_catalog"."default",ALTER COLUMN "remark" TYPE varchar(200) COLLATE "pg_catalog"."default";

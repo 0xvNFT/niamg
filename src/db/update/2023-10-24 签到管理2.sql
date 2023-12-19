@@ -1,0 +1,4 @@
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (494, '签到管理2', 'admin.menu.sign2', '/signInRule2/index.do', 6, 20, '', 'admin:signInRule', 3);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (495, '删除', 'admin.menu.del', '', 494, 1, '', 'admin:signInRule:delete', 4);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (496, '新增', 'admin.menu.add', '', 494, 2, '', 'admin:signInRule:add', 4);
+INSERT INTO "public"."admin_menu"("id", "title", "code", "url", "parent_id", "sort_no", "icon", "perm_name", "type") VALUES (497, '修改', 'admin.menu.modify', '', 494, 3, '', 'admin:signInRule:modify', 4);

@@ -1,0 +1,180 @@
+#main_float_frame_id {
+	position: fixed;
+	z-index: 99999;
+}
+
+#main_float_frame_id .main_float_frame_ul.left_top {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.left_middle_top {
+	position: fixed;
+	top: 15%;
+	left: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.left_middle {
+	position: fixed;
+	top: 30%;
+	left: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.left_middle_bottom {
+	position: fixed;
+	top: 55%;
+	left: 0px;
+}
+
+#main_float_frame_id .main_float_frame_ul.left_bottom {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+#main_float_frame_id .main_float_frame_ul.right_top {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+
+#main_float_frame_id .main_float_frame_ul.right_middle_top {
+	position: fixed;
+	top: 15%;
+	right: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.right_middle_top {
+	position: fixed;
+	top: 15%;
+	right: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.right_middle {
+	position: fixed;
+	top: 30%;
+	right: 0px;
+}
+#main_float_frame_id .main_float_frame_ul.middle_top {
+	position: fixed;
+	top: 0px;
+	right: 38%;
+}
+#main_float_frame_id .main_float_frame_ul.middle_bottom {
+	position: fixed;
+	bottom: 0px;
+	right: 38%;
+}
+#main_float_frame_id .main_float_frame_ul.right_middle_bottom {
+	position: fixed;
+	top: 55%;
+	right: 0px;
+}
+
+#main_float_frame_id .main_float_frame_ul.right_bottom {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+#main_float_frame_id .wh_common {
+	width: 100%;
+	display: block;
+}
+
+#main_float_frame_id .wh_common_child {
+	display: inline;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+#main_float_frame_id .show-hide-over-img {
+	position: relative;
+	display: block;
+}
+
+#main_float_frame_id .over-img-id.right_top, .over-img-id.right_middle, .over-img-id.right_middle_top, .over-img-id.right_middle_bottom {
+	width: 100%;
+	position: absolute;
+	left: -100%;
+	top: 0px;
+	display: none;
+}
+
+#main_float_frame_id .over-img-id.right_bottom {
+	width: 100%;
+	position: absolute;
+	left: -100%;
+	bottom: 0px;
+	display: none;
+}
+
+#main_float_frame_id .over-img-id.left_top, .over-img-id.left_middle, .over-img-id.left_middle_top, .over-img-id.left_middle_bottom {
+	width: 100%;
+	position: absolute;
+	right: -100%;
+	top: 0px;
+	display: none;
+}
+
+#main_float_frame_id .over-img-id.left_bottom {
+	width: 100%;
+	position: absolute;
+	right: -100%;
+	bottom: 0px;
+	display: none;
+}
+
+#main_float_frame_id .slideBox {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#main_float_frame_id .slideBox .hd {
+	height: 25px;
+	overflow: hidden;
+	position: absolute;
+	right: 34%;
+	bottom: -9px;
+	z-index: 1;
+}
+
+#main_float_frame_id .slideBox .hd ul {
+	overflow: hidden;
+	zoom: 1;
+	float: left;
+}
+
+#main_float_frame_id .slideBox .hd ul li {
+	float: left;
+	margin-right: 10px;
+	width: 10px;
+	height: 10px;
+	line-height: 14px;
+	text-align: center;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 22px;
+}
+
+#main_float_frame_id .slideBox .hd ul li.on {
+	background: #f39800;
+	color: #fff;
+}
+
+#main_float_frame_id .slideBox .bd {
+	position: relative;
+	height: 100%;
+	z-index: 0;
+}
+
+#main_float_frame_id .slideBox .bd li {
+	zoom: 1;
+	vertical-align: middle;
+	list-style-type: square;
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+#main_float_frame_id .slideBox .bd img {
+	height: 100%;
+	display: block;
+}
