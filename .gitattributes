@@ -1,1 +1,2 @@
+.svn/pristine/**/*.svn-base filter=lfs diff=lfs merge=lfs -text
 *.svn-base filter=lfs diff=lfs merge=lfs -text
