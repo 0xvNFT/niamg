@@ -16,7 +16,7 @@
 		<logback.version>1.2.3</logback.version>
 		<hikaricp.version>3.4.5</hikaricp.version>
 		<quartz.version>2.3.2</quartz.version>
-		<postgresql.version>42.2.18</postgresql.version>
+		<postgresql.version>42.3.9</postgresql.version>
 		<fastjson.version>1.2.75</fastjson.version>
 		<jackson.version>2.11.3</jackson.version>
 		<commons.lang3.version>3.11</commons.lang3.version>
